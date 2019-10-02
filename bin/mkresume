@@ -93,6 +93,7 @@ def main(argv):
     for heading in external_data["hidden_fields_by_heading"].keys():
         d = external_data["hidden_fields_by_heading"][heading]
         for k in d.keys():
+            print("Filling in: %s/%s" % (heading, k), file=sys.stderr)
             try:
                 dt=bodysoup.find(id=heading).find("dt", string=k)
                 dt.find_next_sibling("dd").string=d[k]
