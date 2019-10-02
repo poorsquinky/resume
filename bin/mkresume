@@ -10,6 +10,28 @@ import markdown
 import bs4
 from bs4 import BeautifulSoup as soup
 
+
+blurb="""
+
+            Hey, welcome to the source.
+
+            I only know enough about modern web design to get myself in
+            trouble, and I even shy away from the accepted normal ways
+            of doing it because I get a weird meditative joy from
+            fiddling around with CSS directly.
+
+            So this is all hand coded HTML and CSS, rendered from
+            Markdown source using tools I wrote.  There's a link to the
+            tools at the bottom of the page.
+
+            I had fun making it.  Hopefully it's at least entertaining
+            to look at.
+
+            -erik
+
+"""
+
+
 def log(txt):
     print(txt, file=sys.stderr)
 
@@ -66,6 +88,9 @@ def main(argv):
     html_template = """
 <html>
     <head>
+        <!--
+%s
+        -->
         <title></title>
         <style type="text/css">
 %s
@@ -74,7 +99,7 @@ def main(argv):
     <body>
     </body>
 </html>
-""" % stylesheet
+""" % (blurb, stylesheet)
 
     pagesoup = soup(html_template, 'html.parser')
 
