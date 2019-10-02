@@ -1,0 +1,125 @@
+#!/usr/bin/env python3
+
+import sys
+import getopt
+import codecs
+
+import ruamel.yaml
+import markdown
+import bs4
+
+
+def usage():
+    print ()
+    print ("Usage:")
+    print ('  %s --styesheet=xxx.css' % sys.argv[0])
+    sys.exit(2)
+
+
+def main(argv):
+
+    markdown_extensions = [
+        'extra'
+    ]
+
+    stylesheet    = ""
+    external_data = {}
+    body          = ""
+
+    try:
+        opts, args = getopt.gnu_getopt(argv, '', ['stylesheet=', 'data='])
+    except getopt.GetoptError:
+        usage()
+    for opt, arg in opts:
+        if opt == '--stylesheet':
+            try:
+                fh = open(arg)
+                stylesheet = "\n".join(fh.readlines())
+            except (TypeError, FileNotFoundError):
+                print("Error.  Enter a valid path to the stylesheet")
+                usage()
+
+        elif opt == '--data':
+            try:
+                fh = open(arg)
+                yaml = ruamel.yaml.YAML(typ='safe')
+                external_data = yaml.load(fh)
+            except (TypeError, FileNotFoundError) as err:
+                print("Error! Enter a path to a valid YAML file.  %s" % err)
+                usage()
+            except ruamel.yaml.parser.ParserError as err:
+                print("YAML parse error.  %s" % err)
+                usage()
+
+    # work through all the markdown files specified
+    for a in args:
+        filename = a
+        input_file = codecs.open(filename, mode="r", encoding="utf-8")
+        text = input_file.read()
+        html = markdown.markdown(text, extensions=markdown_extensions)
+        body += html
+
+    html_template = """
+<html>
+    <head>
+        <style type="text/css">
+%s
+        </style>
+    </head>
+    <body>
+    </body>
+</html>
+""" % stylesheet
+
+    soup = bs4.BeautifulSoup(html_template, 'html.parser')
+
+    bodysoup = bs4.BeautifulSoup(body, 'html.parser')
+
+
+    # set up hierarchy based on headers
+    for heading in bodysoup.find_all('h2'):
+        hname = heading.string.lower().replace(" ", "-")
+        div = bodysoup.new_tag("div", id=hname)
+        for element in heading.find_next_siblings():
+            if element.name == "h2":
+                break
+            element.extract()
+            div.append(element)
+        heading.insert_after(div)
+        heading.extract()
+        div.insert(0, heading)
+
+    # insert hidden data
+    for heading in external_data["hidden_fields_by_heading"].keys():
+        d = external_data["hidden_fields_by_heading"][heading]
+        for k in d.keys():
+            try:
+                dt=bodysoup.find(id=heading).find("dt", string=k)
+                dt.find_next_sibling("dd").string=d[k]
+            except AttributeError:
+                dt = bodysoup.new_tag("dt")
+                dd = bodysoup.new_tag("dd")
+                dt.string = k
+                dd.string = d[k]
+                h = bodysoup.find(id=heading).find('dl')
+                if h:
+                    h.append(dt)
+                    h.append(dd)
+
+    # set percent graphs for dd with x/10
+    for i in range(11):
+        val = "%s/10" % i
+        dds = bodysoup.find_all("dd", string=val)
+        if dds:
+            for dd in dds:
+                dd.string = ""
+                dd['class'] = "bar_%s_of_10" % i
+
+    soup.body.append(bodysoup)
+
+    print(soup.prettify())
+
+if __name__ == '__main__':
+    main(sys.argv[1:])
+
+
