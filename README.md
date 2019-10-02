@@ -1,5 +1,12 @@
 
-# Sample `~/.resumedata.yml` format:
+# resume
+
+This is the repository for my resume, including the tools I use to render it in HTML from Markdown.
+
+Take a look at <https://erikstambaugh.com/resume/> to see it in its current state.
+
+
+### Sample `~/.resumedata.yml` format:
 
     %YAML 1.2
     ---
