@@ -154,3 +154,7 @@ Active in a broad range of arts from music, vehicular and steel sculpture, digit
 
 Member of the Black Rock Rangers, a trained volunteer organization that performs safety, crisis and conflict mediation at large-scale events and festivals.
 
+
+-----
+
+The latest version of this document is always available at <https://erikstambaugh.com/resume/>.  Converted from [original Markdown source](https://erikstambaugh.com/resume/resume.md) using my tools, which are [available on github](https://github.com/poorsquinky/resume).
