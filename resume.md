@@ -22,44 +22,44 @@ Address
 Skills
 ------
 
-AWS Cloud Architecture
-: 9/10
-
-Big Data
-: 5/10
-
-Docker
-: 8/10
-
-Terraform
-: 9/10
-
-Ansible
-: 7/10
-
-Python
-: 8/10
-
-C
-: 5/10
+GNU/Linux (Debian/Ubuntu)
+: 10/10
 
 Bash (scripting)
 : 10/10
 
-JavaScript
-: 6/10
+AWS Cloud Architecture
+: 9/10
 
-GNU/Linux (Debian/Ubuntu)
-: 10/10
+Terraform
+: 9/10
+
+Docker
+: 8/10
+
+Python
+: 8/10
+
+Ansible
+: 7/10
 
 GNU/Linux (RHEL/CentOS)
 : 7/10
 
-MS Windows
-: 3/10
-
 Network Administration
 : 7/10
+
+JavaScript
+: 6/10
+
+Big Data
+: 5/10
+
+C
+: 5/10
+
+MS Windows
+: 3/10
 
 Kermit the Frog impression
 : 9/10

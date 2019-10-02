@@ -3,11 +3,15 @@
 import sys
 import getopt
 import codecs
+import re
 
 import ruamel.yaml
 import markdown
 import bs4
+from bs4 import BeautifulSoup as soup
 
+def log(txt):
+    print(txt, file=sys.stderr)
 
 def usage():
     print ()
@@ -62,6 +66,7 @@ def main(argv):
     html_template = """
 <html>
     <head>
+        <title></title>
         <style type="text/css">
 %s
         </style>
@@ -71,12 +76,24 @@ def main(argv):
 </html>
 """ % stylesheet
 
-    soup = bs4.BeautifulSoup(html_template, 'html.parser')
+    pagesoup = soup(html_template, 'html.parser')
 
-    bodysoup = bs4.BeautifulSoup(body, 'html.parser')
+    bodysoup = soup(body, 'html.parser')
 
 
     # set up hierarchy based on headers
+    for heading in bodysoup.find_all('h3'):
+        hclass = "subheading"
+        div = bodysoup.new_tag("div", class_=hclass)
+        for element in heading.find_next_siblings():
+            if element.name == "h3":
+                break
+            element.extract()
+            div.append(element)
+        heading.insert_after(div)
+        heading.extract()
+        div.insert(0, heading)
+
     for heading in bodysoup.find_all('h2'):
         hname = heading.string.lower().replace(" ", "-")
         div = bodysoup.new_tag("div", id=hname)
@@ -89,24 +106,6 @@ def main(argv):
         heading.extract()
         div.insert(0, heading)
 
-    # insert hidden data
-    for heading in external_data["hidden_fields_by_heading"].keys():
-        d = external_data["hidden_fields_by_heading"][heading]
-        for k in d.keys():
-            print("Filling in: %s/%s" % (heading, k), file=sys.stderr)
-            try:
-                dt=bodysoup.find(id=heading).find("dt", string=k)
-                dt.find_next_sibling("dd").string=d[k]
-            except AttributeError:
-                dt = bodysoup.new_tag("dt")
-                dd = bodysoup.new_tag("dd")
-                dt.string = k
-                dd.string = d[k]
-                h = bodysoup.find(id=heading).find('dl')
-                if h:
-                    h.append(dt)
-                    h.append(dd)
-
     # set percent graphs for dd with x/10
     for i in range(11):
         val = "%s/10" % i
@@ -116,9 +115,43 @@ def main(argv):
                 dd.string = ""
                 dd['class'] = "bar_%s_of_10" % i
 
-    soup.body.append(bodysoup)
+    # insert hidden data
+    if external_data:
 
-    print(soup.prettify())
+        # insert hidden data (address, phone)
+        for heading in external_data.get("hidden_fields_by_heading", {}).keys():
+            d = external_data["hidden_fields_by_heading"][heading]
+            for k in d.keys():
+                log("Filling in: %s/%s" % (heading, k))
+                try:
+                    dt=bodysoup.find(id=heading).find("dt", string=k)
+                    dt.find_next_sibling("dd").string=d[k]
+                except AttributeError:
+                    dt = bodysoup.new_tag("dt")
+                    dd = bodysoup.new_tag("dd")
+                    dt.string = k
+                    dd.string = d[k]
+                    h = bodysoup.find(id=heading).find('dl')
+                    if h:
+                        h.append(dt)
+                        h.append(dd)
+
+    # set a page title
+    title = bodysoup.find("h1").string
+    pagesoup.find("title").string = title
+
+    pagesoup.body.append(bodysoup)
+
+    out = pagesoup.prettify()
+    # we're going to cheat and pop the SVG in directly rather than rely on BS4 to process it,
+    # at least until I can sort out why BS4 is choking whenever I use it to parse SVG snippets
+    if external_data:
+        for lookfor in external_data.get("replace_content_global", []).keys():
+            replace = external_data["replace_content_global"][lookfor]
+            findstr = "%s" % lookfor
+            out = re.sub(findstr, replace, out, flags=re.MULTILINE)
+
+    print(out)
 
 if __name__ == '__main__':
     main(sys.argv[1:])
