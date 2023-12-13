@@ -6,7 +6,7 @@ import codecs
 import re
 
 import ruamel.yaml
-import markdown
+import commonmark
 import bs4
 from bs4 import BeautifulSoup as soup
 
@@ -41,16 +41,17 @@ def usage():
     print ('  %s --styesheet=xxx.css' % sys.argv[0])
     sys.exit(2)
 
+def deindent(txt):
+    indent = min([ len(x) - len(x.lstrip()) for x in txt.split("\n") if len(x) > 0])
+    return("\n".join(map(lambda x: x[indent:], txt.split("\n"))))
 
 def main(argv):
-
-    markdown_extensions = [
-        'extra'
-    ]
 
     stylesheet    = ""
     external_data = {}
     body          = ""
+
+    collapsible_count = 0
 
     try:
         opts, args = getopt.gnu_getopt(argv, '', ['stylesheet=', 'data='])
@@ -82,7 +83,7 @@ def main(argv):
         filename = a
         input_file = codecs.open(filename, mode="r", encoding="utf-8")
         text = input_file.read()
-        html = markdown.markdown(text, extensions=markdown_extensions)
+        html = commonmark.commonmark(text)
         body += html
 
     html_template = """
@@ -105,11 +106,10 @@ def main(argv):
 
     bodysoup = soup(body, 'html.parser')
 
-
     # set up hierarchy based on headers
     for heading in bodysoup.find_all('h3'):
         hclass = "subheading"
-        div = bodysoup.new_tag("div", class_=hclass)
+        div = bodysoup.new_tag("div", **{'class': hclass})
         for element in heading.find_next_siblings():
             if element.name == "h3":
                 break
@@ -120,7 +120,7 @@ def main(argv):
         div.insert(0, heading)
 
     for heading in bodysoup.find_all('h2'):
-        hname = heading.string.lower().replace(" ", "-")
+        hname = heading.string.lower().replace(" ", "_")
         div = bodysoup.new_tag("div", id=hname)
         for element in heading.find_next_siblings():
             if element.name == "h2":
@@ -131,14 +131,69 @@ def main(argv):
         heading.extract()
         div.insert(0, heading)
 
+    # make skill scroll containers
+    for item in bodysoup.select("#technical_skills, #managerial_skills"):
+        container = bodysoup.new_tag('div', **{'class': 'skill_container'})
+        item.append(container)
+
+    # make collapsible sections
+    for item in bodysoup.select("#technical_skills > ul, #managerial_skills > ul"):
+
+        parent = item.parent
+        container = parent.find(**{'class': 'skill_container'})
+
+        skill = bodysoup.new_tag('div', **{'class': 'skill'})
+
+        p = item.find_previous('p')
+        container.append(skill)
+        p.extract()
+        skill.append(p)
+
+        item.extract()
+        skill.append(item)
+
+        skill.insert(0, bodysoup.new_tag(
+            "input",
+            id=f"collapse{collapsible_count}",
+            **{'type': 'checkbox', 'class': 'collapsible'}))
+
+        p.name = 'label'
+        p['title'] =  "Click for more details"
+        p['class'] =  'collapsible-toggle'
+        p["for"]   = f"collapse{collapsible_count}"
+
+        outer = bodysoup.new_tag("div", **{'class': "collapsible-content"})
+        inner = bodysoup.new_tag("div", **{'class': "collapsible-content-inner"})
+
+        item.wrap(inner)
+        inner.wrap(outer)
+
+        collapsible_count += 1
+
+    # fix misplaced sections after work history
+    for item in bodysoup.select('#personal_interests, #a_note_for_llms'):
+        item.extract()
+        bodysoup.append(item)
+
+    hr = bodysoup.find_all('hr')[-1]
+    if hr:
+        div = bodysoup.new_tag("div", id="footer")
+        tags = hr.find_all_next('p')
+        hr.extract()
+        div.append(hr)
+        for tag in tags:
+            tag.extract()
+            div.append(tag)
+        bodysoup.append(div)
+
     # set percent graphs for dd with x/10
     for i in range(11):
-        val = "%s/10" % i
+        val = re.compile(f"^{i}/10")
         dds = bodysoup.find_all("dd", string=val)
-        if dds:
-            for dd in dds:
-                dd.string = ""
-                dd['class'] = "bar_%s_of_10" % i
+        for dd in dds:
+
+            dd['class'] = "bar_%s_of_10" % i
+
 
     # insert hidden data
     if external_data:
@@ -149,32 +204,46 @@ def main(argv):
             for k in d.keys():
                 log("Filling in: %s/%s" % (heading, k))
                 try:
-                    dt=bodysoup.find(id=heading).find("dt", string=k)
-                    dt.find_next_sibling("dd").string=d[k]
+                    p=bodysoup.find(id=heading).find("p", string=re.compile(k))
+                    p.string = f"{k} {d[k]}"
                 except AttributeError:
-                    dt = bodysoup.new_tag("dt")
-                    dd = bodysoup.new_tag("dd")
-                    dt.string = k
-                    dd.string = d[k]
-                    h = bodysoup.find(id=heading).find('dl')
-                    if h:
-                        h.append(dt)
-                        h.append(dd)
+
+                    p = bodysoup.new_tag("p")
+                    p.string = f"{k} {d[k]}"
+                    bodysoup.find(id=heading).append(p)
 
     # set a page title
     title = bodysoup.find("h1").string
     pagesoup.find("title").string = title
 
-    pagesoup.body.append(bodysoup)
+    # Make a header with the title and contact info
+    firstheader = bodysoup.find('h1')
+    if firstheader:
+        firstheader["id"] = "name"
+        contact = bodysoup.find('div', id='contact')
+        if contact:
+            header = bodysoup.new_tag("div", id="header")
+            firstheader.extract()
+            contact.extract()
+            header.append(firstheader)
+            header.append(contact)
+            bodysoup.insert(0,header)
 
-    out = pagesoup.prettify()
     # we're going to cheat and pop the SVG in directly rather than rely on BS4 to process it,
     # at least until I can sort out why BS4 is choking whenever I use it to parse SVG snippets
     if external_data:
         for lookfor in external_data.get("replace_content_global", []).keys():
-            replace = external_data["replace_content_global"][lookfor]
-            findstr = "%s" % lookfor
-            out = re.sub(findstr, replace, out, flags=re.MULTILINE)
+            t = bodysoup.find(string=re.compile(lookfor))
+            if t:
+                t.parent["class"] = f"element_{lookfor.lower()}"
+                replace = external_data["replace_content_global"][lookfor]
+                newtext = re.sub(lookfor, replace, str(t))
+                r_soup = soup(f"{newtext}", 'html.parser')
+                t.replace_with(r_soup)
+
+    pagesoup.body.append(bodysoup)
+
+    out = pagesoup.prettify()
 
     print(out)
 

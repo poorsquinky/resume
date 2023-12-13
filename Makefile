@@ -1,9 +1,9 @@
-all: html 
+all: html
 
 MD_FILES := $(wildcard *.md)
 MD_FILES := $(filter-out README.md, $(MD_FILES))
 
-html: $(addsuffix .html,$(basename $(MD_FILES)))
+html: resume.md css/resume.css resumedata-public.yaml $(addsuffix .html,$(basename $(MD_FILES)))
 
 #R = bin/mkresume --stylesheet=css/resume.css --data=/home/erik/.resumedata.yaml
 
