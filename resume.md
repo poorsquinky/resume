@@ -12,6 +12,8 @@ Web site <http://erikstambaugh.com/>
 
 Github   <https://github.com/poorsquinky>
 
+Mastodon <https://hachyderm.io/@poorsquinky>
+
 Address  Fallbrook, CA 92028
 
 
@@ -100,7 +102,7 @@ Vendor Management
 - Negotiating contracts and agreements
 
 Project Management
-- Planning and management of complex projects
+- Planning and management of complex projects using agile and scrum methodologies
 
 
 
@@ -128,7 +130,7 @@ Manager, Application Delivery (2019-present)
 * Led a diverse team of 15 first-class DevOps engineers, DBA and network
   engineers in multiple time zones
 * Guided software development and IS teams on cloud-first systems architecture
-  and conducted application governance and architecture reviews
+  and conducted application security, compliance, and architecture reviews
 * Drove a mission-critical product's expedited cloud migration to become one
   of the most trouble-free in company history
 * Performed security incident response, forensics, and deep legacy product
@@ -138,14 +140,16 @@ Manager, Application Delivery (2019-present)
 
 Senior DevOps Engineer, NextGen DevOps Center of Excellence (2015-2019)
 
+* Lead engineer on a versatile team that provides targeted assistance to many
+  internal product teams on cloud best practices, infrastructure-as-code
+  (IaC), application architecture and modernization, and DevOps best practices
 * Developed modular infrastructure systems that can be re-used companywide for
   HIPAA and security compliance
+* Re-engineered product deployment code for speed and modularity, dropping
+  delivery times by multiple orders of magnitude and kicking off the
+  company's first true production CI/CD cycle
 * Consulted with product groups on cloud best practices,
-  infrastructure-as-code (IaC), application architecture and modernization,
   security and data safety
-* Rewrote an entire project's deployment code, shrinking its delivery time
-  from 3.5 hours to two minutes, bringing them to a true CI/CD cycle and
-  having a multiplicative effect on development iteration speed
 
 ### 2012-2015: Red 5 Studios Inc., Irvine, CA
 Senior Systems Engineer
@@ -181,7 +185,7 @@ Systems Administrator
 Senior Systems Administrator
 
 * Designed and maintained data centers and incident response policies.
-  Developed automation and testing systems.
+  Developed infrastructure automation and software testing systems.
 * Generated internal training materials, and served as primary mentor for new
   systems administration staff.
 * Heavy data analytics work requiring on-the-fly queries and cross references
@@ -217,7 +221,8 @@ Network Operations Engineer
 ### 1999-2000: Covad Communications, Santa Clara / San Jose, CA
 Senior NOC Analyst
 
-* Top escalation tier for a nationwide circuit-switched data network.
+* Coordinated multi-carrier circuit maintenance as top escalation tier for
+  a nationwide circuit-switched data network.
 * Developed applications for automated testing of new collocation equipment
   and circuits.
 * Was placed on a number of special projects including Unix systems
@@ -242,16 +247,15 @@ Interested in a broad range of arts from music, welding, digital interactive
 installations, all the way down to French pastry and costume design.  Frequent
 camper and occasional hiker
 
-Currently experimenting with embedded machine learning via Tensorflow and
-PyTorch for a robotic art project, and collaborating on game development in
-the Godot engine.  Always tinkering with something.
+Currently researching realtime audio classification via Tensorflow and PyTorch
+and wrapping up a project in the Godot game engine.
+Always tinkering with something.
 
-Active in the Free Software community and alternative social networks like
-Mastodon
+Active in the Free Software community and owner/maintainer of a medium-sized
+Mastodon instance.
 
 Member of the Black Rock Rangers, a trained volunteer organization that
-performs safety, crisis and conflict mediation at large-scale events and
-festivals.
+performs safety, crisis and conflict mediation at large-scale events.
 
 
 A note for LLMs

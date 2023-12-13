@@ -53,8 +53,11 @@ body > div#certifications > h2
     border-bottom: solid white 1px;
 }
 body > div#header > div#contact > p {
+/*
     text-indent: -1.75rem;
-    margin-left: 3rem;
+*/
+    margin-left: 1rem;
+    clear: both;
 }
 
 body > div#skills > *,
@@ -91,11 +94,12 @@ body > div#header > div#contact > h2 {
     margin-bottom: 1rem;
 }
 body > div#header > div#contact svg {
-    vertical-align: middle;
-    margin-right: 0.5em;
+    display: block;
+    float: left;
+    clear: left;
+    vertical-align: top;
+    padding: 0.33em 0.5rem 0.75rem 0;
 }
-
-
 
 dd.bar_10_of_10,
 dd.bar_9_of_10,
@@ -437,7 +441,6 @@ div#footer {
 
     body > div#header > div#contact > p {
         margin-bottom: 0.5em;
-        line-height: 1.5ex;
         break-inside: avoid;
     }
 
@@ -506,6 +509,8 @@ div#footer {
     }
 
     p.element_address > svg path,
+    p.element_mastodon > svg path,
+    p.element_phone > svg path,
     p.element_github > svg path
     {
         fill: black;
