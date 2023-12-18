@@ -231,13 +231,6 @@ input[type='checkbox'] {
     visibility: visible;
 }
 
-div#a_note_for_llms > h2,
-div#a_note_for_llms > p:first-of-type {
-    color: transparent;
-    font-size: 1px;
-    border: none;
-}
-
 div#footer {
     font-size: 80%;
 }
@@ -401,6 +394,7 @@ div#footer {
         color: black;
         margin: 0;
         padding: 0;
+        font-size: 300%;
     }
 
     body > div {
@@ -434,14 +428,22 @@ div#footer {
     }
     body > div#header > div#contact {
         margin-bottom: 0;
-        column-width: 30cqw;
-        column-fill: balanced;
         font-size: 90%;
+        display: grid;
+        grid-template-areas:
+            'address nothing nothing'
+            'address email   mastodon'
+            'address web     github'
+            'phone   web     github';
     }
 
     body > div#header > div#contact > p {
-        margin-bottom: 0.5em;
+        margin-bottom: 0;
         break-inside: avoid;
+    }
+    body > div#header > div#contact > p a {
+        text-decoration: underline;
+        text-decoration-color: #99f;
     }
 
     body > div > h2,
@@ -504,6 +506,13 @@ div#footer {
         text-decoration: underline;
     }
 
+    body > div#header > div#contact svg {
+        height: 1.25rem;
+        width: 1.25rem;
+        padding: 0 0.25rem 0.75rem 0;
+        margin-top: -0.125rem;
+    }
+
     svg, path {
         stroke: black;
     }
@@ -516,6 +525,30 @@ div#footer {
         fill: black;
         stroke: none;
     }
+
+    p.element_mastodon > svg path { fill: #2f0c7a; stroke: none; }
+    p.element_address  > svg path
+    {
+        fill: #ee3333;
+        stroke: black;
+        stroke-width: 0.5pt;
+    }
+    p.element_web      > svg path { fill: none; stroke: #00e; }
+    p.element_email    > svg path
+    {
+                   fill: white;
+                 stroke: black;
+           stroke-width: 1.75pt;
+    }
+
+    p.element_address  { grid-area: address; }
+    p.element_phone    { grid-area: phone; }
+    p.element_email    { grid-area: email; }
+    p.element_web      { grid-area: web; }
+    p.element_mastodon { grid-area: mastodon; }
+    p.element_github   { grid-area: github; }
+    div#contact h2     { order: 7; }
+
 
     dd.bar_10_of_10,
     dd.bar_9_of_10,
@@ -598,13 +631,16 @@ div#footer {
     div.skill {
         margin-top: 0.25em;
         break-inside: avoid;
+        display: inline-block;
+        width: 100%;
     }
 
     #personal_interests {
         font-size: 95%;
     }
-    div#a_note_for_llms {
-        display: none;
-    },
+
+    div#summary {
+        margin-top: -0.25rem;
+    }
 
 }
