@@ -7,7 +7,7 @@ body {
     background-position: left;
     background-color: white;
     font-family: Helvetica, Arial, sans-serif !important;
-    margin: 0;
+    margin: 0 1rem 0 0;
     padding: 0;
 }
 
@@ -35,20 +35,10 @@ body > div > h2 {
     margin-bottom: 0.5rem;
 }
 
-body > div#header > div#contact,
-body > div#skills,
-body > div#technical_skills,
-body > div#managerial_skills,
-body > div#certifications
-{
-    margin-bottom: 4rem;
-}
-
 body > div#header > div#contact > h2,
 body > div#skills > h2,
 body > div#technical_skills > h2,
-body > div#managerial_skills > h2,
-body > div#certifications > h2
+body > div#managerial_skills > h2
 {
     border-bottom: solid white 1px;
 }
@@ -239,16 +229,14 @@ div#footer {
     body > div#header > div#contact > *,
     body > div#skills > *,
     body > div#technical_skills > *,
-    body > div#managerial_skills > *,
-    body > div#certifications > *
+    body > div#managerial_skills > *
     {
         width: 21rem;
     }
     body > div#header > div#contact,
     body > div#skills,
     body > div#technical_skills,
-    body > div#managerial_skills,
-    body > div#certifications
+    body > div#managerial_skills
     {
         margin-bottom: 4rem;
         width: 22rem;
@@ -257,8 +245,7 @@ div#footer {
     body > div#header > div#contact > *,
     body > div#skills > *,
     body > div#technical_skills > *,
-    body > div#managerial_skills > *,
-    body > div#certifications > *
+    body > div#managerial_skills > *
     {
         width: 21rem;
         color: black;
@@ -285,7 +272,6 @@ div#footer {
     div#technical_skills,
     div#managerial_skills,
     div#skills,
-    div#certifications,
     body > div#header > h1
     {
         color: white;
@@ -299,8 +285,7 @@ div#footer {
     div#skills,
     div#technical_skills,
     div#managerial_skills,
-    div#skills,
-    div#certifications
+    div#skills
     {
         padding: 0;
     }
@@ -308,8 +293,7 @@ div#footer {
     div#skills > *,
     div#technical_skills > *,
     div#managerial_skills > *,
-    div#skills > *,
-    div#certifications > *,
+    div#skills > *
     {
         padding-left: 1rem;
     }
@@ -358,8 +342,7 @@ div#footer {
     body > div#header > div#contact > *,
     body > div#skills > *,
     body > div#technical_skills > *,
-    body > div#managerial_skills > *,
-    body > div#certifications > *
+    body > div#managerial_skills > *
     {
         color: #ddd;
     }
@@ -373,8 +356,7 @@ div#footer {
     body > div#header > div#contact > h2,
     body > div#skills > h2,
     body > div#technical_skills > h2,
-    body > div#managerial_skills > h2,
-    body > div#certifications > h2
+    body > div#managerial_skills > h2
     {
         border-bottom: solid #777 1px;
     }
@@ -399,8 +381,15 @@ div#footer {
 
     body > div {
         margin-left: 0;
-        margin-bottom: 0.5em !important;
         padding-bottom: 0;
+    }
+    body > div#header > div#contact,
+    body > div#skills,
+    body > div#technical_skills,
+    body > div#managerial_skills,
+    body > div#work_experience
+    {
+        margin-bottom: 0.5rem;
     }
 
     body > div#header {
@@ -445,7 +434,9 @@ div#footer {
         text-decoration: underline;
         text-decoration-color: #99f;
     }
-
+    body > div#header > div#contact > p.element_pdf {
+        display: none;
+    }
     body > div > h2,
     body > div > div > h2{
         font-size: 120%;
@@ -463,8 +454,7 @@ div#footer {
     }
     body > div#skills > h2,
     body > div#technical_skills > h2,
-    body > div#managerial_skills > h2,
-    body > div#certifications > h2
+    body > div#managerial_skills > h2
     {
         border-bottom: solid black 1px;
     }
@@ -505,12 +495,30 @@ div#footer {
         margin-top: 0.25em;
         text-decoration: underline;
     }
+    body > div#work_experience > div.subheading > p:first-of-type
+    {
+        margin-top: 0;
+    }
 
     body > div#header > div#contact svg {
+        height: 1rem;
+        width: 1rem;
+        padding: 0 0.25rem 0.5rem 0;
+        margin-top: -0.125rem;
+    }
+    body > div#header > div#contact > p.element_email > svg
+    {
+        padding-top: 0.1rem;
+    }
+    body > div#header > div#contact > p.element_address > svg
+    {
+        margin-top: 0.25rem;
+    }
+    body > div#header > div#contact > p.element_mastodon > svg
+    {
         height: 1.25rem;
         width: 1.25rem;
-        padding: 0 0.25rem 0.75rem 0;
-        margin-top: -0.125rem;
+        margin-left: -0.25rem;
     }
 
     svg, path {

@@ -8,14 +8,15 @@ Contact
 
 Email       <erik@erikstambaugh.com>
 
-Web         <http://erikstambaugh.com/>
+Web         <https://erikstambaugh.com/>
 
 Mastodon    <https://hachyderm.io/@poorsquinky>
 
 Github      <https://github.com/poorsquinky>
 
-Address     Fallbrook, CA 92028
+PDF         [Link to a PDF version](https://erikstambaugh.com/resume/ErikStambaugh.pdf)
 
+Address     Fallbrook, CA 92028
 
 Summary
 -------
@@ -23,10 +24,9 @@ Summary
 Dynamic technical manager known for blending advanced technical expertise with
 exceptional interpersonal skills.  Recognized for fostering collaborative team
 environments and effectively communicating complex technical concepts to
-non-technical stakeholders.
-
-Adept at implementing DevOps best practices, improving agile development, cost
-savings, service security and reliability in the cloud.
+non-technical stakeholders.  Adept at implementing DevOps best practices,
+improving agile development, cost savings, service security and reliability in
+the cloud.
 
 
 Technical Skills
@@ -38,28 +38,34 @@ GNU / Linux
 - Debian / Ubuntu package creation, maintenance, and backporting
 
 Software Development
-- Python, Bash, C, C#, NodeJS, Perl, countless others
+- Python, Bash, C, C#, JavaScript, Perl, Ruby, countless others
+- Creation of robust, scalable, and maintainable application architecture, and
+  bringing legacy applications up to standard
 
-AWS / Cloud
-- Subject matter expert on cost savings, cloud architecture best practices,
-  and HIPAA/PCI BAA and other compliance
+Cloud Computing
+- Heavy experience with AWS and private cloud tools like OpenStack
+- Subject matter expert on cost savings and cloud architecture best practices
 - Hands-on with cloud-first architectures like Lambda, Aurora, and Athena, and
   countless others
 
+Compliance
+- HIPAA, PCI DSS, and regulatory compliance
+- Governance policy generation, auditing, assessment, and remediation
+  processes
+
 Network Security
-- Network analysis and intrusion.  Some blue team work and some red team
-  work
+- Comprehensive system security from code to CDN
+- Risk management and intrusion detection/prevention
+- Vulnerability assessments and penetration testing
 
 Infrastructure as Code (IaC)
-- Ansible, Chef, Puppet for server/VM configuration
+- Ansible, Chef for server/VM configuration
 - Docker, Compose, and ECS for container management
 - Terraform, CloudFormation, and SAM for cloud resource management
 
 Continuous Integration / Delivery (CI/CD)
-- AWS CodePipeline and Jenkins
 - Designed, built, and deployed pipelines for development projects of all
-  sizes, and everything from quarterly releases to true trunk-based continuous
-  delivery
+  sizes and all levels of CI/CD adoption
 
 Kermit the Frog impression
 - Just seeing if you're actually reading this
@@ -68,11 +74,12 @@ Network Administration
 - Experienced with complex Ethernet and WiFi network topologies
 - Protocol-level network analysis
 
-Data storage
-- DBA-level experience with PostgreSQL and mySQL
-- "Big Data" solutions like Hadoop, Elastic MapReduce (EMR), Athena
-- Unusually good at processing large amounts of cross-referenced text data
-  from the Bash prompt
+Data Management
+- DBA-level experience with RDBMS like PostgreSQL and mySQL
+- Large scale processing with "Big Data" tools like Spark and Athena
+- Data warehousing and data lake design
+- Rapid ad-hoc processing large cross-referenced datasets using command line
+  tools, often outpacing dedicated big data teams
 
 
 Managerial Skills
@@ -97,24 +104,11 @@ Team Development
 - Mentoring technical staff for personal and professional advancement
 
 Vendor Management
-- Evaluating and managing third-party vendors
-- Negotiating contracts and agreements
+- Evaluating and managing third-party vendors, contracts and agreements
 
 Project Management
-- Planning and management of complex projects using agile and scrum methodologies
-
-
-
-
-Certifications
---------------
-
-AWS Solutions Architect - Associate, 2018
-
-Mirantis OpenStack Professional (OCM100), 2015
-
-
-
+- Planning and management of complex projects using agile and scrum
+  methodologies
 
 
 Work Experience
@@ -244,8 +238,8 @@ Personal Interests
 ------------------
 
 Interested in a broad range of arts from music, metalwork, digital interactive
-installations, all the way down to French pastry and costume design.  Frequent
-camper and occasional hiker
+installations, all the way down to French pastry and costume design.
+Frequently found outdoors
 
 Currently developing experience with machine learning, researching realtime
 audio classification via Tensorflow and PyTorch.  Also wrapping up a project

@@ -175,6 +175,7 @@ def main(argv):
         item.extract()
         bodysoup.append(item)
 
+    # create the footer section and put everything after the hr in it
     hr = bodysoup.find_all('hr')[-1]
     if hr:
         div = bodysoup.new_tag("div", id="footer")
