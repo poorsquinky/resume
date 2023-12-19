@@ -1,6 +1,7 @@
 
 
-body {
+body
+{
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4woDFwAdfm6t7wAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAGElEQVQY02M098j8z0AEYGIgEowqpI5CABfDAfsjyZJ8AAAAAElFTkSuQmCC);
     background-size: 22rem 22rem;
     background-repeat: repeat-y;
@@ -11,24 +12,28 @@ body {
     padding: 0;
 }
 
-a {
+a
+{
     color: inherit;
 }
 
 
 
-body > div#header {
+body > div#header
+{
     margin: 0;
     padding: 0;
 }
 
 
-body > div > * {
+body > div > *
+{
     padding-left: 1rem;
 }
 
 body > div > div > h2,
-body > div > h2 {
+body > div > h2
+{
     margin-top: 0;
     padding-left: 1rem;
     border-bottom: solid black 1px;
@@ -42,7 +47,8 @@ body > div#managerial_skills > h2
 {
     border-bottom: solid white 1px;
 }
-body > div#header > div#contact > p {
+body > div#header > div#contact > p
+{
 /*
     text-indent: -1.75rem;
 */
@@ -58,32 +64,39 @@ body > div#managerial_skills > p
     margin-bottom: 0;
 }
 
-div.skill {
+div.skill
+{
     margin: 0;
     padding: 0;
 }
 
-dl {
+dl
+{
     margin: 0;
 }
 
-dd {
+dd
+{
     margin-bottom: 0.5rem;
 }
 
-body > div#header > div#contact dt {
+body > div#header > div#contact dt
+{
     float: left;
     min-width: 1rem;
     padding-right: 0.75rem;
 }
-body > div#header > div#contact dd {
+body > div#header > div#contact dd
+{
     margin-left: 1rem;
     margin-bottom: 1rem;
 }
-body > div#header > div#contact > h2 {
+body > div#header > div#contact > h2
+{
     margin-bottom: 1rem;
 }
-body > div#header > div#contact svg {
+body > div#header > div#contact svg
+{
     display: block;
     float: left;
     clear: left;
@@ -114,62 +127,33 @@ dd.bar_0_of_10
     margin-bottom: 0.5rem;
 }
 
-dd.bar_10_of_10 {
-    background-size: 15rem 1rem;
-}
-
-dd.bar_9_of_10 {
-    background-size: 13.5rem 1rem;
-}
-
-dd.bar_8_of_10 {
-    background-size: 12rem 1rem;
-}
-
-dd.bar_7_of_10 {
-    background-size: 10.5rem 1rem;
-}
-
-dd.bar_6_of_10 {
-    background-size: 9rem 1rem;
-}
-
-dd.bar_5_of_10 {
-    background-size: 7.5rem 1rem;
-}
-
-dd.bar_4_of_10 {
-    background-size: 6rem 1rem;
-}
-
-dd.bar_3_of_10 {
-    background-size: 4.5rem 1rem;
-}
-
-dd.bar_2_of_10 {
-    background-size: 3rem 1rem;
-}
-
-dd.bar_1_of_10 {
-    background-size: 1.5rem 1rem;
-}
-
-dd.bar_0_of_10 {
-    background-size: 1px 1rem;
-}
+dd.bar_10_of_10 { background-size:   15rem 1rem; }
+dd.bar_9_of_10  { background-size: 13.5rem 1rem; }
+dd.bar_8_of_10  { background-size:   12rem 1rem; }
+dd.bar_7_of_10  { background-size: 10.5rem 1rem; }
+dd.bar_6_of_10  { background-size:    9rem 1rem; }
+dd.bar_5_of_10  { background-size:  7.5rem 1rem; }
+dd.bar_4_of_10  { background-size:    6rem 1rem; }
+dd.bar_3_of_10  { background-size:  4.5rem 1rem; }
+dd.bar_2_of_10  { background-size:    3rem 1rem; }
+dd.bar_1_of_10  { background-size:  1.5rem 1rem; }
+dd.bar_0_of_10  { background-size:     1px 1rem; }
 
 
-input[type='checkbox'] {
+input[type='checkbox']
+{
     display: none;
     margin: 0;
     padding: 0;
 }
 
-.skill {
+.skill
+{
     margin-top: 1.0em;
 }
 
-.collapsible-toggle {
+.collapsible-toggle
+{
     cursor: pointer;
     transition: all 0.25s ease-out;
 
@@ -179,7 +163,8 @@ input[type='checkbox'] {
 }
 
 
-.collapsible-content {
+.collapsible-content
+{
 
     top: -3rem;
     max-height: 0px;
@@ -190,23 +175,27 @@ input[type='checkbox'] {
     font-size: 95%;
 }
 
-.collapsible-content > * > * {
+.collapsible-content > * > *
+{
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 1.5rem;
     padding-right: 1rem;
 }
 
-.collapsible:checked + .collapsible-toggle + .collapsible-content {
+.collapsible:checked + .collapsible-toggle + .collapsible-content
+{
     max-height: 100vh;
 }
 
-.collapsible:checked + .collapsible-toggle {
+.collapsible:checked + .collapsible-toggle
+{
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.collapsible-modal {
+.collapsible-modal
+{
     display: block;
     visibility: hidden;
     position: fixed;
@@ -217,11 +206,13 @@ input[type='checkbox'] {
     background-color: rgba(0,0,0,0);
     z-index: 10;
 }
-.collapsible:checked + .collapsible-toggle + .collapsible-content>.collapsible-modal {
+.collapsible:checked + .collapsible-toggle + .collapsible-content>.collapsible-modal
+{
     visibility: visible;
 }
 
-div#footer {
+div#footer
+{
     font-size: 80%;
 }
 
@@ -250,11 +241,13 @@ div#footer {
         width: 21rem;
         color: black;
     }
-    body > div p {
+    body > div p
+    {
         padding-right: 1rem;
     }
 
-    body > div > h1 {
+    body > div > h1
+    {
         margin-top: 1rem;
         padding-left: 1rem;
         font-size: 250%;
@@ -264,7 +257,8 @@ div#footer {
         position: running(title);
     }
 
-    body > div {
+    body > div
+    {
         margin-left: 22rem;
     }
     div#contact,
@@ -298,15 +292,18 @@ div#footer {
         padding-left: 1rem;
     }
 
-    .collapsible-content {
+    .collapsible-content
+    {
         background: rgba(0,0,0,0.1);
     }
-    .collapsible-toggle:hover {
+    .collapsible-toggle:hover
+    {
         color: #fff;
         background-color: rgba(0,0,0,0.125);
     }
 
-    .collapsible:checked + .collapsible-toggle::before {
+    .collapsible:checked + .collapsible-toggle::before
+    {
       transform: rotate(90deg) translateX(1ex) translateY(0.5ex);
     }
 
@@ -323,7 +320,8 @@ div#footer {
         opacity: 30%;
     }
 
-    .collapsible-toggle::before {
+    .collapsible-toggle::before
+    {
         content: "▸";
         font-weight: bold;
         margin-top: -0.25ex;
@@ -335,7 +333,8 @@ div#footer {
 }
 
 @media (prefers-color-scheme: dark) {
-    body {
+    body
+    {
         background-color: #333;
         color: #ddd;
     }
@@ -363,7 +362,8 @@ div#footer {
 }
 
 @media print {
-    body {
+    body
+    {
         background-image: none !important;
         color: black !important;
         font-size: 0.75rem;
@@ -392,16 +392,19 @@ div#footer {
         margin-bottom: 0.5rem;
     }
 
-    body > div#header {
+    body > div#header
+    {
         margin-bottom: 0 !important;
     }
 
-    body > div > * {
+    body > div > *
+    {
         page-break-inside: avoid;
         line-height: 120%;
     }
 
-    body > div > p {
+    body > div > p
+    {
         margin-top: 0;
         margin-bottom: 0.25rem;
     }
@@ -411,11 +414,13 @@ div#footer {
         margin: 0;
     }
 
-    dd {
+    dd
+    {
         margin-left: 1rem;
         width: 17rem;
     }
-    body > div#header > div#contact {
+    body > div#header > div#contact
+    {
         margin-bottom: 0;
         font-size: 90%;
         display: grid;
@@ -426,15 +431,18 @@ div#footer {
             'phone   web     github';
     }
 
-    body > div#header > div#contact > p {
+    body > div#header > div#contact > p
+    {
         margin-bottom: 0;
         break-inside: avoid;
     }
-    body > div#header > div#contact > p a {
+    body > div#header > div#contact > p a
+    {
         text-decoration: underline;
         text-decoration-color: #99f;
     }
-    body > div#header > div#contact > p.element_pdf {
+    body > div#header > div#contact > p.element_pdf
+    {
         display: none;
     }
     body > div > h2,
@@ -469,7 +477,8 @@ div#footer {
         clear: both;
     }
 
-    div.subheading {
+    div.subheading
+    {
         page-break-inside: avoid;
         padding-left: 1em;
     }
@@ -500,7 +509,8 @@ div#footer {
         margin-top: 0;
     }
 
-    body > div#header > div#contact svg {
+    body > div#header > div#contact svg
+    {
         height: 1rem;
         width: 1rem;
         padding: 0 0.25rem 0.5rem 0;
@@ -521,7 +531,8 @@ div#footer {
         margin-left: -0.25rem;
     }
 
-    svg, path {
+    svg, path
+    {
         stroke: black;
     }
 
@@ -578,55 +589,24 @@ div#footer {
         background-color: transparent;
     }
 
-    dd.bar_10_of_10 {
-        background-size: 10rem 0.5rem;
-    }
-
-    dd.bar_9_of_10 {
-        background-size: 9rem 0.5rem;
-    }
-
-    dd.bar_8_of_10 {
-        background-size: 8rem 0.5rem;
-    }
-
-    dd.bar_7_of_10 {
-        background-size: 7rem 0.5rem;
-    }
-
-    dd.bar_6_of_10 {
-        background-size: 6rem 0.5rem;
-    }
-
-    dd.bar_5_of_10 {
-        background-size: 5rem 0.5rem;
-    }
-
-    dd.bar_4_of_10 {
-        background-size: 4rem 0.5rem;
-    }
-
-    dd.bar_3_of_10 {
-        background-size: 3rem 0.5rem;
-    }
-
-    dd.bar_2_of_10 {
-        background-size: 2rem 0.5rem;
-    }
-
-    dd.bar_1_of_10 {
-        background-size: 1rem 0.5rem;
-    }
-
-    dd.bar_0_of_10 {
-        background-size: 1px 0.5rem;
-    }
-
-    .collapsible-content {
+    dd.bar_10_of_10 { background-size: 10rem 0.5rem; }
+    dd.bar_9_of_10  { background-size:  9rem 0.5rem; }
+    dd.bar_8_of_10  { background-size:  8rem 0.5rem; }
+    dd.bar_7_of_10  { background-size:  7rem 0.5rem; }
+    dd.bar_6_of_10  { background-size:  6rem 0.5rem; }
+    dd.bar_5_of_10  { background-size:  5rem 0.5rem; }
+    dd.bar_4_of_10  { background-size:  4rem 0.5rem; }
+    dd.bar_3_of_10  { background-size:  3rem 0.5rem; }
+    dd.bar_2_of_10  { background-size:  2rem 0.5rem; }
+    dd.bar_1_of_10  { background-size:  1rem 0.5rem; }
+    dd.bar_0_of_10  { background-size:   1px 0.5rem; }
+    .collapsible-content
+    {
         max-height: 100vh;
     }
 
-    .collapsible-content-inner > ul {
+    .collapsible-content-inner > ul
+    {
         padding-left: 1em;
     }
 
@@ -636,18 +616,21 @@ div#footer {
         padding-left: 0;
         margin-left: -0.5em;
     }
-    div.skill {
+    div.skill
+    {
         margin-top: 0.25em;
         break-inside: avoid;
         display: inline-block;
         width: 100%;
     }
 
-    #personal_interests {
+    #personal_interests
+    {
         font-size: 95%;
     }
 
-    div#summary {
+    div#summary
+    {
         margin-top: -0.25rem;
     }
 
