@@ -5,6 +5,11 @@ This is the repository for my resume, including the tools I use to render it in 
 
 Take a look at <https://erikstambaugh.com/resume/> to see it in its current state.
 
+## requirements
+
+- python3-ruamel.yaml
+- python3-commonmark
+- python3-bs4
 
 ### Sample `~/.resumedata.yml` format:
 

@@ -18,6 +18,7 @@ PDF         [Link to a PDF version](https://erikstambaugh.com/resume/ErikStambau
 
 Address     Fallbrook, CA 92028
 
+
 Summary
 -------
 
@@ -49,7 +50,7 @@ Cloud Computing
   countless others
 
 Compliance
-- HIPAA, PCI DSS, and regulatory compliance
+- HIPAA, PCI DSS, and other regulatory compliance
 - Governance policy generation, auditing, assessment, and remediation
   processes
 
@@ -59,9 +60,9 @@ Network Security
 - Vulnerability assessments and penetration testing
 
 Infrastructure as Code (IaC)
-- Ansible, Chef for server/VM configuration
-- Docker, Compose, and ECS for container management
-- Terraform, CloudFormation, and SAM for cloud resource management
+- Ansible, Chef for server/VM management
+- Podman, Docker, Compose, and ECS for containers
+- OpenTofu, Terraform, CloudFormation, and SAM for cloud resource management
 
 Continuous Integration / Delivery (CI/CD)
 - Designed, built, and deployed pipelines for development projects of all
@@ -80,6 +81,9 @@ Data Management
 - Data warehousing and data lake design
 - Rapid ad-hoc processing large cross-referenced datasets using command line
   tools, often outpacing dedicated big data teams
+
+Machine Learning
+- Model creation, training, and optimization in Tensorflow and Keras
 
 
 Managerial Skills
@@ -106,9 +110,6 @@ Team Development
 Vendor Management
 - Evaluating and managing third-party vendors, contracts and agreements
 
-Project Management
-- Planning and management of complex projects using agile and scrum
-  methodologies
 
 
 Work Experience
@@ -226,7 +227,7 @@ Senior NOC Analyst
 Co-owner
 
 * Helped convert a local BBS into an internet service provider with over a
-  thousand users
+  thousand customers in multiple cities
 * Responsible for all aspects of the company's operation, from managing
   employees, software engineering, systems and network architecture, to sales,
   marketing, graphic design, and technical support
