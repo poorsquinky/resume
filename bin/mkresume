@@ -61,7 +61,7 @@ def main(argv):
         if opt == '--stylesheet':
             try:
                 fh = open(arg)
-                stylesheet = "\n".join(fh.readlines())
+                stylesheet = "".join(fh.readlines())
             except (TypeError, FileNotFoundError):
                 print("Error.  Enter a valid path to the stylesheet")
                 usage()
