@@ -10,6 +10,7 @@ Take a look at <https://erikstambaugh.com/resume/> to see it in its current stat
 - python3-ruamel.yaml
 - python3-commonmark
 - python3-bs4
+- chromium (for PDF generation)
 
 ### Sample `~/.resumedata.yml` format:
 
