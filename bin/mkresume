@@ -207,11 +207,20 @@ def main(argv):
                 try:
                     p=bodysoup.find(id=heading).find("p", string=re.compile(k))
                     p.string = f"{k} {d[k]}"
-                except AttributeError:
 
+                    # put that tag at the beginning of its parent
+                    parent = p.parent
+                    p.extract()
+                    parent.insert(1,p)
+
+                except AttributeError:
                     p = bodysoup.new_tag("p")
                     p.string = f"{k} {d[k]}"
                     bodysoup.find(id=heading).append(p)
+                    # put that tag at the beginning of its parent
+                    parent = p.parent
+                    p.extract()
+                    parent.insert(1,p)
 
     # set a page title
     title = bodysoup.find("h1").string
