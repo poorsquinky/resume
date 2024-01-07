@@ -88,7 +88,7 @@ body > div#header > div#contact svg {
     float: left;
     clear: left;
     vertical-align: top;
-    padding: 0 0.5rem 0.75rem 0;
+    padding: 0.2rem 0.5rem 0.75rem 0;
 }
 
 dd.bar_10_of_10,
@@ -488,21 +488,18 @@ div#footer {
         height: 1rem;
         width: 1rem;
         padding: 0 0.25rem 0.5rem 0;
-        margin-top: -0.25rem;
-    }
-    body > div#header > div#contact > p.element_email > svg
-    {
-        padding-top: 0.1rem;
+        margin-top: -0.1rem;
     }
     body > div#header > div#contact > p.element_address > svg
     {
-        margin-top: 0.25rem;
+        padding-top: 0.25rem;
     }
     body > div#header > div#contact > p.element_mastodon > svg
     {
         height: 1.25rem;
         width: 1.25rem;
         margin-left: -0.25rem;
+        margin-top: -0.175rem;
     }
 
     svg, path
