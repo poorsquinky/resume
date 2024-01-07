@@ -22,7 +22,7 @@ Address     Fallbrook, CA 92028
 Summary
 -------
 
-Dynamic technical manager known for blending advanced technical expertise with
+Dynamic engineering leader known for blending advanced technical expertise with
 exceptional interpersonal skills.  Recognized for fostering collaborative team
 environments and effectively communicating complex technical concepts to
 non-technical stakeholders.  Adept at implementing DevOps best practices,
@@ -118,16 +118,17 @@ Work Experience
 ### 2015-2023 (present): NextGen Healthcare, Irvine, CA
 Manager, Application Delivery (2019-present)
 
-* Led a diverse and multiregional team of 15 first-class DevOps engineers, DBA
-  and network engineers, developing skill and confidence by giving gentle
-  guidance while pushing staff outside their technical comfort zone
-* Managed cloud cost saving initiatives recovering many hundreds of thousands
-  of dollars in monthly expenses and the closure of multiple legacy data
-  centers
-* Guided software development and IS teams on cloud-first systems architecture
-  and conducted application security, compliance, and architecture reviews
-* Drove a mission-critical product's expedited cloud migration to become one
-  of the most trouble-free in company history
+* Recruited and led a diverse and multiregional team of 15 first-class DevOps
+  engineers, DBA and network engineers
+* Led cloud-first infrastructure modernization for products across the NextGen
+  portfolio and drove application architecture, security, and compliance
+  reviews
+* Managed cloud cost saving initiatives recovering millions of dollars in
+  recurring expenses and the closure of multiple legacy data centers
+* Mentored team to develop skill and confidence by carefully guiding staff
+  outside their technical comfort zone
+* Drove an expedited cloud migration for a mission-critical product, which
+  became the most trouble-free migration in the company's history
 * Performed security incident response, forensics, and deep legacy product
   analysis
 * Trained staff throughout the company in group as well as one-on-one settings
@@ -149,16 +150,19 @@ Senior DevOps Engineer, NextGen DevOps Center of Excellence (2015-2019)
 ### 2012-2015: Red 5 Studios Inc., Irvine, CA
 Senior Systems Engineer
 
-* Led on-call engineering staff for a 24x7 cloud-based MMORPG
-* Developed custom alerting aggregation software
-* Created game statistics and business intelligence dashboards for use
-  throughout the company
+* Led on-call engineering staff for a 24x7 cloud-based MMORPG from public
+  alpha and beta testing through fully-shipped release
+* Developed custom instrumentation aggregation software to provide prioritized
+  "at-a-glance" views into several data centers
+* Created live gameplay statistics and business intelligence dashboards for
+  use throughout the company
 * Designed the company's data lake and introduced cost-saving measures with
   faster and more efficient data storage
-* Screening, mentoring, coaching and training for all new network operations
-  staff
+* Performed technical screening and hiring decisions, plus mentoring, coaching
+  and training for all new network operations staff
 * Systems architecture and deployment automation.  AWS and OpenStack cloud
   infrastructure management
+* When necessary, contributed code patches to game platform and server software
 
 ### 2011-2012: Irvine, CA
 Freelance consultant
@@ -189,11 +193,13 @@ Senior Systems Administrator
 ### 2001-2006: Conexant Systems, Inc. / Mindspeed Technologies, Newport Beach, CA
 Multiple contract and permanent positions
 
-* Created a circuit-switched network processor test system
+* Deployed, integrated, and managed engineering support systems.  Performed
+  a massive data migration from legacy source code management services
+* Mentored and formally trained new recent-graduate hires on software
+  engineering best practices
 * Made hardware compatibility improvements to the Linux kernel ATM driver
 * Major contributor of enterprise features to the Bugzilla project
-* Deployed, integrated, and managed source code management systems.  Performed
-  a massive data migration from legacy services
+* Created a circuit-switched network processor test system
 * Devised new product testing and automation processes
 * Acted in an advisory role to the IT department for network security and
   server architecture issues
@@ -240,17 +246,17 @@ Personal Interests
 
 Interested in a broad range of arts from music, metalwork, digital interactive
 installations, all the way down to French pastry and costume design.
-Frequently found outdoors
+Frequently found outdoors as well.
 
 Currently developing experience with machine learning, researching realtime
 audio classification via Tensorflow and PyTorch.  Also wrapping up a project
-in the Godot game engine.  Always tinkering with something
+in the Godot game engine.  Always tinkering with something.
 
 Active in the Free Software community and owner/maintainer of a medium-sized
-Mastodon instance
+Mastodon instance.
 
 Member of the Black Rock Rangers, a trained volunteer organization that
-performs safety, crisis and conflict mediation at large-scale events
+performs safety, crisis and conflict mediation at large-scale events.
 
 
 -----
