@@ -115,7 +115,7 @@ Vendor Management
 Work Experience
 ---------------
 
-### 2015-2023 (present): NextGen Healthcare, Irvine, CA
+### 2015-2024 (present): NextGen Healthcare, Irvine, CA
 Manager, Application Delivery (2019-present)
 
 * Recruited and led a diverse and multiregional team of 15 first-class DevOps
@@ -162,7 +162,6 @@ Senior Systems Engineer
   and training for all new network operations staff
 * Systems architecture and deployment automation.  AWS and OpenStack cloud
   infrastructure management
-* When necessary, contributed code patches to game platform and server software
 
 ### 2011-2012: Irvine, CA
 Freelance consultant
