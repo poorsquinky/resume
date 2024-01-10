@@ -22,6 +22,10 @@ TARGET_DIR = ~/resume_public/
 
 
 %.pdf: html
+	# all this junk is because chromium is in a snap, ugh
+	mkdir -p ~/.pdftmp
+	cp resume.html ~/.pdftmp
+	cd ~/.pdftmp && \
 	chromium \
 		--headless \
 		--run-all-compositor-stages-before-draw \
@@ -30,6 +34,7 @@ TARGET_DIR = ~/resume_public/
 		--print-to-pdf-no-header \
 		--print-to-pdf=$@ \
 		resume.html
+	mv ~/.pdftmp/$@ .
 
 clean:
 	rm -f *.html
