@@ -68,9 +68,6 @@ Continuous Integration / Delivery (CI/CD)
 - Designed, built, and deployed pipelines for development projects of all
   sizes and all levels of CI/CD adoption
 
-Kermit the Frog impression
-- Just seeing if you're actually reading this
-
 Network Administration
 - Experienced with complex Ethernet and WiFi network topologies
 - Protocol-level network analysis
