@@ -112,8 +112,8 @@ Vendor Management
 
 
 
-Work Experience
----------------
+Experience
+----------
 
 ### 2015-2024 (present): NextGen Healthcare, Irvine, CA
 Manager, Application Delivery (2019-present)
@@ -218,24 +218,7 @@ Network Operations Engineer
 * Provided network fault detection and resolution for multiple customer
   networks
 
-### 1999-2000: Covad Communications, Santa Clara / San Jose, CA
-Senior NOC Analyst
 
-* Coordinated multi-carrier circuit maintenance as top escalation tier for
-  a nationwide circuit-switched data network
-* Developed applications for automated testing of new collocation equipment
-  and circuits
-* Was placed on a number of special projects including Unix systems
-  administration and network penetration testing (Red Team)
-
-### 1993-1997: InterComm Internet Services, Sparks, NV
-Co-owner
-
-* Helped convert a local BBS into an internet service provider with over a
-  thousand customers in multiple cities
-* Responsible for all aspects of the company's operation, from managing
-  employees, software engineering, systems and network architecture, to sales,
-  marketing, graphic design, and technical support
 
 
 

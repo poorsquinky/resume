@@ -361,7 +361,7 @@ div#footer {
     body > div#skills,
     body > div#technical_skills,
     body > div#managerial_skills,
-    body > div#work_experience
+    body > div#experience
     {
         margin-bottom: 0.5rem;
     }
@@ -446,7 +446,7 @@ div#footer {
         column-fill: balanced;
     }
 
-    body > div#work_experience
+    body > div#experience
     {
         clear: both;
     }
@@ -457,28 +457,28 @@ div#footer {
         padding-left: 1em;
     }
 
-    body > div#work_experience > div.subheading > h3
+    body > div#experience > div.subheading > h3
     {
         font-size: inherit;
     }
-    body > div#work_experience > div.subheading
+    body > div#experience > div.subheading
     {
         margin-top: 1em;
     }
-    body > div#work_experience > div.subheading:first-of-type
+    body > div#experience > div.subheading:first-of-type
     {
         margin-top: 0;
     }
-    body > div#work_experience > div.subheading > ul
+    body > div#experience > div.subheading > ul
     {
         padding-left: 2em;
     }
-    body > div#work_experience > div.subheading > p
+    body > div#experience > div.subheading > p
     {
         margin-top: 0.25em;
         text-decoration: underline;
     }
-    body > div#work_experience > div.subheading > p:first-of-type
+    body > div#experience > div.subheading > p:first-of-type
     {
         margin-top: 0;
     }
