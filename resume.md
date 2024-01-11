@@ -215,7 +215,11 @@ Network Operations Engineer
 * Provided network fault detection and resolution for multiple customer
   networks
 
+---
 
+  
+
+*Employment history prior to 2000 available upon request*
 
 
 
