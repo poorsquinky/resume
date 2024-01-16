@@ -88,7 +88,7 @@ body > div#header > div#contact svg {
     float: left;
     clear: left;
     vertical-align: top;
-    padding: 0.2rem 0.5rem 0.75rem 0;
+    padding: 0 0.5rem 0 0;
 }
 
 dd.bar_10_of_10,
@@ -189,7 +189,7 @@ input[type='checkbox'] {
 }
 
 div#footer {
-    font-size: 80%;
+    font-size: 90%;
 }
 
 @media screen {
@@ -332,7 +332,7 @@ div#footer {
 
 @media print {
     @page {
-        margin: 1.25rem;
+        margin: 1.5rem;
     }
     body
     {
@@ -399,10 +399,8 @@ div#footer {
         font-size: 90%;
         display: grid;
         grid-template-areas:
-            'address nothing nothing'
-            'address email   mastodon'
-            'address web     github'
-            'phone   web     github';
+            'email web      mastodon'
+            'phone linkedin github';
     }
 
     body > div#header > div#contact > p
@@ -421,10 +419,14 @@ div#footer {
     }
     body > div > h2,
     body > div > div > h2{
-        font-size: 120%;
-        margin-top: 0;
-        margin-bottom: 0;
+        font-size: 1rem;
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
         padding-left: 0;
+    }
+    body > div#summary > h2
+    {
+        margin-top: 0.25rem;
     }
 
     body > div#header > div#contact > h2
@@ -459,7 +461,12 @@ div#footer {
 
     body > div#experience > div.subheading > h3
     {
-        font-size: inherit;
+        font-size: 125%;
+    }
+    body > div#experience > div.subheading > h3 > span:first-of-type
+    {
+        display: block;
+        float: right;
     }
     body > div#experience > div.subheading
     {
@@ -480,15 +487,14 @@ div#footer {
     }
     body > div#experience > div.subheading > p:first-of-type
     {
-        margin-top: 0;
+        margin-top: 0.25em;
+        margin-bottom: 0.5em;
     }
 
     body > div#header > div#contact svg
     {
         height: 1rem;
         width: 1rem;
-        padding: 0 0.25rem 0.5rem 0;
-        margin-top: -0.1rem;
     }
     body > div#header > div#contact > p.element_address > svg
     {
@@ -498,7 +504,7 @@ div#footer {
     {
         height: 1.25rem;
         width: 1.25rem;
-        margin-left: -0.25rem;
+        margin-left: -0.125rem;
         margin-top: -0.175rem;
     }
 
@@ -517,6 +523,7 @@ div#footer {
     }
 
     p.element_mastodon > svg path { fill: #2f0c7a; stroke: none; }
+    p.element_linkedin > svg path { stroke: none; }
     p.element_address  > svg path
     {
         fill: #ee3333;
@@ -524,6 +531,10 @@ div#footer {
         stroke-width: 0.5pt;
     }
     p.element_web      > svg path { fill: none; stroke: #00e; }
+    p.element_email    > svg
+    {
+
+    }
     p.element_email    > svg path
     {
                    fill: white;
@@ -536,7 +547,19 @@ div#footer {
     p.element_email    { grid-area: email; }
     p.element_web      { grid-area: web; }
     p.element_mastodon { grid-area: mastodon; }
+    p.element_linkedin { grid-area: linkedin; }
     p.element_github   { grid-area: github; }
+    p.element_address,
+    p.element_phone,
+    p.element_email,
+    p.element_web,
+    p.element_mastodon,
+    p.element_linkedin,
+    p.element_github
+    {
+        height:      1.125rem;
+        line-height:  1rem;
+    }
     div#contact h2     { order: 7; }
 
 
@@ -575,6 +598,9 @@ div#footer {
     {
         max-height: 100vh;
     }
+    .collapsible-content > * > ul {
+        margin-top: 0.075rem;
+    }
 
     .collapsible-content-inner > ul
     {
@@ -589,7 +615,7 @@ div#footer {
     }
     div.skill
     {
-        margin-top: 0.25em;
+        margin-bottom: 0.25em;
         break-inside: avoid;
         display: inline-block;
         width: 100%;
@@ -598,6 +624,18 @@ div#footer {
     #personal_interests
     {
         font-size: 95%;
+    }
+
+    hr
+    {
+        border-top: none;
+        border-bottom: solid black 1px;
+        margin-top: 0.75rem !important;
+    }
+
+    #footer
+    {
+        margin-top: 0.5rem;
     }
 
 }

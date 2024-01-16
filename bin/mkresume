@@ -239,6 +239,15 @@ def main(argv):
             header.append(contact)
             bodysoup.insert(0,header)
 
+    # now break the experience dates off from the role
+    for item in bodysoup.select("#experience h3"):
+        t = str(item.text)
+        item.string = ''
+        for i in t.split(':'):
+            tag = bodysoup.new_tag('span')
+            tag.append(i)
+            item.append(tag)
+
     # we're going to cheat and pop the SVG in directly rather than rely on BS4 to process it,
     # at least until I can sort out why BS4 is choking whenever I use it to parse SVG snippets
     if external_data:

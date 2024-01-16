@@ -10,13 +10,13 @@ Email       <erik@erikstambaugh.com>
 
 Web         <https://erikstambaugh.com/>
 
+LinkedIn    [linkedin.com/in/erik-stambaugh](https://www.linkedin.com/in/erik-stambaugh/)
+
 Mastodon    <https://hachyderm.io/@poorsquinky>
 
 Github      <https://github.com/poorsquinky>
 
 PDF         [Link to a PDF version](https://erikstambaugh.com/resume/ErikStambaugh.pdf)
-
-Address     Fallbrook, CA 92028
 
 
 Summary
@@ -160,7 +160,7 @@ Senior Systems Engineer
 * Systems architecture and deployment automation.  AWS and OpenStack cloud
   infrastructure management
 
-### 2011-2012: Irvine, CA
+### 2011-2012: Self-employed, Irvine, CA
 Freelance consultant
 
 * Independent development of a bespoke hybrid document management and CRM
