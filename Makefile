@@ -35,6 +35,20 @@ TARGET_DIR = ~/resume_public/
 		--print-to-pdf=$@ \
 		resume.html
 	mv ~/.pdftmp/$@ .
+	#
+	
+	# dupe to make a public version of the PDF
+	cp resume-public.html ~/.pdftmp
+	cd ~/.pdftmp && \
+	chromium \
+		--headless \
+		--run-all-compositor-stages-before-draw \
+		--disable-gpu \
+		--no-pdf-header-footer \
+		--print-to-pdf-no-header \
+		--print-to-pdf=$*-public.pdf \
+		resume-public.html
+	mv ~/.pdftmp/$*-public.pdf .
 
 clean:
 	rm -f *.html
