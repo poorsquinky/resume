@@ -361,7 +361,8 @@ div#footer {
     body > div#skills,
     body > div#technical_skills,
     body > div#managerial_skills,
-    body > div#experience
+    body > div#experience,
+    body > div#certifications
     {
         margin-bottom: 0.5rem;
     }

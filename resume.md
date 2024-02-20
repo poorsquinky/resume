@@ -22,12 +22,11 @@ PDF         [Link to a PDF version](https://erikstambaugh.com/resume/ErikStambau
 Summary
 -------
 
-Dynamic engineering leader known for blending advanced technical expertise with
-exceptional interpersonal skills.  Recognized for fostering collaborative team
-environments and effectively communicating complex technical concepts to
-non-technical stakeholders.  Adept at implementing DevOps best practices,
-improving agile development, cost savings, service security and reliability in
-the cloud.
+Experienced engineering leader who values collaboration and clear
+communication.  Skilled in implementing DevOps principles to enhance agile
+development, reduce costs, and improve security and reliability in cloud
+environments. Known for creating inclusive environments where everyone's input
+is valued.
 
 
 Technical Skills
