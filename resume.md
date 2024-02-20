@@ -112,8 +112,8 @@ Vendor Management
 Experience
 ----------
 
-### 2015-2024 (present): NextGen Healthcare, Irvine, CA
-Manager, Application Delivery (2019-present)
+### 2019-2024 (present): NextGen Healthcare, Irvine, CA
+Manager, Application Delivery / DevOps Manager
 
 * Recruited and led a diverse and multiregional team of 15 first-class DevOps
   engineers, DBA and network engineers
@@ -131,7 +131,8 @@ Manager, Application Delivery (2019-present)
 * Trained staff throughout the company in group as well as one-on-one settings
   on emerging cloud and software technologies
 
-Senior DevOps Engineer, NextGen DevOps Center of Excellence (2015-2019)
+### 2015-2019: NextGen Healthcare, Irvine, CA
+Senior DevOps Engineer
 
 * Lead engineer on a versatile team that provides targeted assistance to many
   internal product teams on cloud best practices, infrastructure-as-code
@@ -145,7 +146,7 @@ Senior DevOps Engineer, NextGen DevOps Center of Excellence (2015-2019)
   security and data safety
 
 ### 2012-2015: Red 5 Studios Inc., Irvine, CA
-Senior Systems Engineer
+Senior Systems Engineer / SRE
 
 * Led on-call engineering staff for a 24x7 cloud-based MMORPG from public
   alpha and beta testing through fully-shipped release
@@ -187,7 +188,7 @@ Senior Systems Administrator
   to data stores in multiple formats
 
 ### 2001-2006: Conexant Systems, Inc. / Mindspeed Technologies, Newport Beach, CA
-Multiple contract and permanent positions
+Systems Engineer
 
 * Deployed, integrated, and managed engineering support systems.  Performed
   a massive data migration from legacy source code management services
