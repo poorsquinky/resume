@@ -40,7 +40,7 @@ body > div > h2 {
 body > div#header > div#contact > h2,
 body > div#skills > h2,
 body > div#technical_skills > h2,
-body > div#managerial_skills > h2 {
+body > div#leadership_skills > h2 {
     border-bottom: solid #777 1px;
 }
 body > div#header > div#contact > p {
@@ -53,7 +53,7 @@ body > div#header > div#contact > p {
 
 body > div#skills > *,
 body > div#technical_skills > p,
-body > div#managerial_skills > p {
+body > div#leadership_skills > p {
     margin-top: 1rem;
     margin-bottom: 0;
 }
@@ -196,7 +196,7 @@ div#footer {
     body > div#header > div#contact > *,
     body > div#skills > *,
     body > div#technical_skills > *,
-    body > div#managerial_skills > *
+    body > div#leadership_skills > *
     {
         width: 21rem;
         color: #ddd;
@@ -204,7 +204,7 @@ div#footer {
     body > div#header > div#contact,
     body > div#skills,
     body > div#technical_skills,
-    body > div#managerial_skills
+    body > div#leadership_skills
     {
         margin-bottom: 3rem;
         width: 22rem;
@@ -238,7 +238,7 @@ div#footer {
     div#contact,
     div#skills,
     div#technical_skills,
-    div#managerial_skills,
+    div#leadership_skills,
     div#skills,
     body > div#header > h1
     {
@@ -249,7 +249,7 @@ div#footer {
     div#contact,
     div#skills,
     div#technical_skills,
-    div#managerial_skills,
+    div#leadership_skills,
     div#skills
     {
         padding: 0;
@@ -259,7 +259,7 @@ div#footer {
     div#contact > *,
     div#skills > *,
     div#technical_skills > *,
-    div#managerial_skills > *,
+    div#leadership_skills > *,
     div#skills > *
     {
         padding-left: 1rem;
@@ -282,7 +282,7 @@ div#footer {
 
     div#skills > h2:after,
     div#technical_skills > h2:after,
-    div#managerial_skills > h2:after
+    div#leadership_skills > h2:after
     {
         content: "(Click to expand)";
         float: right;
@@ -318,13 +318,13 @@ div#footer {
     body > div#header > div#contact > h2,
     body > div#skills > h2,
     body > div#technical_skills > h2,
-    body > div#managerial_skills > h2 {
+    body > div#leadership_skills > h2 {
         border-bottom: solid black 1px;
     }
     body > div#header > div#contact > *,
     body > div#skills > *,
     body > div#technical_skills > *,
-    body > div#managerial_skills > *
+    body > div#leadership_skills > *
     {
         color: black;
     }
@@ -339,7 +339,7 @@ div#footer {
         background-image: none !important;
         color: black !important;
         background-color: white !important;
-        font-size: 0.7rem;
+        font-size: 9pt;
         margin: 0;
         padding: 0;
     }
@@ -349,7 +349,7 @@ div#footer {
         color: black;
         margin: 0;
         padding: 0;
-        font-size: 300%;
+        font-size: 18pt;
     }
 
     body > div {
@@ -360,11 +360,11 @@ div#footer {
     body > div#summary,
     body > div#skills,
     body > div#technical_skills,
-    body > div#managerial_skills,
+    body > div#leadership_skills,
     body > div#experience,
     body > div#certifications
     {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.25rem;
     }
 
     body > div#header
@@ -380,6 +380,7 @@ div#footer {
 
     body > div > p
     {
+        font-size: 9pt;
         margin-top: 0.25em;
         margin-bottom: 0.25rem;
     }
@@ -406,6 +407,7 @@ div#footer {
 
     body > div#header > div#contact > p
     {
+        font-size: 8pt;
         margin-bottom: 0;
         break-inside: avoid;
     }
@@ -420,8 +422,8 @@ div#footer {
     }
     body > div > h2,
     body > div > div > h2{
-        font-size: 1rem;
-        margin-top: 0.25rem;
+        font-size: 11pt;
+        margin-top: 0.125rem;
         margin-bottom: 0.25rem;
         padding-left: 0;
     }
@@ -439,7 +441,7 @@ div#footer {
     }
     body > div#skills > h2,
     body > div#technical_skills > h2,
-    body > div#managerial_skills > h2
+    body > div#leadership_skills > h2
     {
         border-bottom: solid black 1px;
     }
@@ -462,7 +464,7 @@ div#footer {
 
     body > div#experience > div.subheading > h3
     {
-        font-size: 125%;
+        font-size: 9pt;
     }
     body > div#experience > div.subheading > h3 > span:first-of-type
     {
@@ -479,7 +481,7 @@ div#footer {
     }
     body > div#experience > div.subheading > ul
     {
-        padding-left: 2em;
+        padding-left: 1.5em;
     }
     body > div#experience > div.subheading > p
     {
@@ -488,7 +490,7 @@ div#footer {
     }
     body > div#experience > div.subheading > p:first-of-type
     {
-        margin-top: 0.25em;
+        margin-top: 0;
         margin-bottom: 0.5em;
     }
 
@@ -605,11 +607,12 @@ div#footer {
 
     .collapsible-content-inner > ul
     {
-        padding-left: 2em;
+        padding-left: 1.5em;
     }
 
     div.skill > label.collapsible-toggle
     {
+        font-size: 9pt;
         text-decoration: underline;
         padding-left: 0;
         margin-left: -0.5em;
@@ -620,6 +623,10 @@ div#footer {
         break-inside: avoid;
         display: inline-block;
         width: 100%;
+    }
+    div.skill > .collapsible-content
+    {
+        font-size: 8pt;
     }
 
     #personal_interests
@@ -634,9 +641,14 @@ div#footer {
         margin-top: 0.75rem !important;
     }
 
-    #footer
+    body > div#footer > p
     {
+        font-size: 8pt;
         margin-top: 0.5rem;
+    }
+
+    p > em {
+        font-size: 8pt;
     }
 
 }

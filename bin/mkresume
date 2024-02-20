@@ -132,12 +132,12 @@ def main(argv):
         div.insert(0, heading)
 
     # make skill scroll containers
-    for item in bodysoup.select("#technical_skills, #managerial_skills"):
+    for item in bodysoup.select("#technical_skills, #leadership_skills"):
         container = bodysoup.new_tag('div', **{'class': 'skill_container'})
         item.append(container)
 
     # make collapsible sections
-    for item in bodysoup.select("#technical_skills > ul, #managerial_skills > ul"):
+    for item in bodysoup.select("#technical_skills > ul, #leadership_skills > ul"):
 
         parent = item.parent
         container = parent.find(**{'class': 'skill_container'})

@@ -32,21 +32,24 @@ is valued.
 Technical Skills
 ----------------
 
-GNU / Linux
-- Intricate knowledge of SysV Unix internals
-- Direct code-level Linux kernel experience
-- Debian / Ubuntu package creation, maintenance, and backporting
+Continuous Integration / Delivery (CI/CD)
+- Designed and built CI/CD pipelines for dozens of projects
+- Obsessively focused on creating fast and safe development cycles
+
+Cloud Computing
+- Heavy experience with public clouds (AWS) and private clouds (OpenStack)
+- Leader in cost savings and cloud architecture best practices
+- Hands-on with cloud-first architectures like Lambda, ECS
 
 Software Development
 - Python, Bash, C, C#, JavaScript, Perl, Ruby, countless others
 - Creation of robust, scalable, and maintainable application architecture, and
   bringing legacy applications up to standard
 
-Cloud Computing
-- Heavy experience with AWS and private cloud tools like OpenStack
-- Subject matter expert on cost savings and cloud architecture best practices
-- Hands-on with cloud-first architectures like Lambda, Aurora, and Athena, and
-  countless others
+GNU / Linux
+- Intricate knowledge of SysV Unix internals
+- Direct code-level Linux kernel experience
+- Debian / Ubuntu package creation, maintenance, and backporting
 
 Compliance
 - HIPAA, PCI DSS, and other regulatory compliance
@@ -61,16 +64,11 @@ Network Security
 Infrastructure as Code (IaC)
 - Ansible, Chef for server/VM management
 - Podman, Docker, Compose, and ECS for containers
-- OpenTofu, Terraform, CloudFormation, and SAM for cloud resource management
-
-Continuous Integration / Delivery (CI/CD)
-- Designed, built, and deployed pipelines for development projects of all
-  sizes and all levels of CI/CD adoption
-- Obsessively focused on creating fast and safe development cycles
+- Terraform and CloudFormation for infrastructure management
 
 Network Administration
-- Experienced with complex Ethernet and WiFi network topologies
-- Protocol-level network analysis
+- Experienced managing complex wired and wireless networks
+- Packet-level network analysis and troubleshooting
 
 Data Management
 - DBA-level experience with RDBMS like PostgreSQL and mySQL
@@ -83,7 +81,7 @@ Machine Learning and MLOps
 - Feature store, model operationalizing and monitoring
 - High-availability ML service architecture
 
-Managerial Skills
+Leadership Skills
 -----------------
 
 Communication
@@ -117,15 +115,11 @@ Manager, Application Delivery / DevOps Manager
 
 * Recruited and led a diverse and multiregional team of 15 first-class DevOps
   engineers, DBA and network engineers
-* Led cloud-first infrastructure modernization for products across the NextGen
-  portfolio and drove application architecture, security, and compliance
-  reviews
-* Managed cloud cost saving initiatives recovering millions of dollars in
-  recurring expenses and the closure of multiple legacy data centers
+* Managed cloud cost saving efforts recovering millions of dollars in
+  recurring expenses and closing multiple data centers
+* Led portfolio-wide cloud-first infrastructure modernization initiatives
 * Mentored team to develop skill and confidence by carefully guiding staff
   outside their technical comfort zone
-* Drove an expedited cloud migration for a mission-critical product, which
-  became the most trouble-free migration in the company's history
 * Performed security incident response, forensics, and deep legacy product
   analysis
 * Trained staff throughout the company in group as well as one-on-one settings
@@ -149,20 +143,20 @@ Senior DevOps Engineer
 Senior Systems Engineer / SRE
 
 * Led on-call engineering staff for a 24x7 cloud-based MMORPG from public
-  alpha and beta testing through fully-shipped release
-* Developed custom instrumentation aggregation software to provide prioritized
-  "at-a-glance" views into several data centers
+  alpha and beta through fully-shipped release
+* Developed custom instrumentation aggregation software to provide simple
+  combined views into several data centers
 * Created live gameplay statistics and business intelligence dashboards for
   use throughout the company
 * Designed the company's data lake and introduced cost-saving measures with
   faster and more efficient data storage
-* Performed technical screening and hiring decisions, plus mentoring, coaching
-  and training for all new network operations staff
+* Performed screening and hiring decisions, plus mentoring, coaching
+  and training for new network operations staff
 * Systems architecture and deployment automation.  AWS and OpenStack cloud
   infrastructure management
 
 ### 2011-2012: Self-employed, Irvine, CA
-Freelance consultant
+Freelance Software Development
 
 * Independent development of a bespoke hybrid document management and CRM
   application for a corporate client
@@ -228,13 +222,14 @@ Network Operations Engineer
 Personal Interests
 ------------------
 
-Interested in a broad range of arts from music, metalwork, digital interactive
-installations, all the way down to French pastry and costume design.
+Interested in a broad range of arts: musician, DJ/producer, digital interactive
+installations, even pastry and clothing design.
 Frequently found outdoors as well.
 
-Currently developing experience with machine learning and MLOps, creating
-Docker-based experimentation, operationalization, and CI/CD systems for some
-of my own models.  Also wrapping up a project in the Godot game engine.
+Currently building experience by developing a machine learning / MLOps
+pipeline with Docker-based experimentation, feature extraction,
+operationalization, and CI/CD systems, as well as work on custom models.
+Also wrapping up a project in the Godot game engine.
 Always tinkering with something.
 
 Active in the Free Software community and owner/maintainer of a medium-sized
