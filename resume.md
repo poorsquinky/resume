@@ -67,6 +67,7 @@ Infrastructure as Code (IaC)
 Continuous Integration / Delivery (CI/CD)
 - Designed, built, and deployed pipelines for development projects of all
   sizes and all levels of CI/CD adoption
+- Obsessively focused on creating fast and safe development cycles
 
 Network Administration
 - Experienced with complex Ethernet and WiFi network topologies
@@ -74,14 +75,14 @@ Network Administration
 
 Data Management
 - DBA-level experience with RDBMS like PostgreSQL and mySQL
-- Large scale processing with "Big Data" tools like Spark and Athena
+- "Big Data" tools like Spark and Athena
 - Data warehousing and data lake design
-- Rapid ad-hoc processing large cross-referenced datasets using command line
-  tools, often outpacing dedicated big data teams
+- Rapid ad-hoc processing of large datasets
 
-Machine Learning
-- Model creation, training, and optimization in Tensorflow and Keras
-
+Machine Learning and MLOps
+- Model creation, training, and optimization with Tensorflow and Keras
+- Feature store, model operationalizing and monitoring
+- High-availability ML service architecture
 
 Managerial Skills
 -----------------
@@ -231,9 +232,10 @@ Interested in a broad range of arts from music, metalwork, digital interactive
 installations, all the way down to French pastry and costume design.
 Frequently found outdoors as well.
 
-Currently developing experience with machine learning, researching realtime
-audio classification via Tensorflow and PyTorch.  Also wrapping up a project
-in the Godot game engine.  Always tinkering with something.
+Currently developing experience with machine learning and MLOps, creating
+Docker-based experimentation, operationalization, and CI/CD systems for some
+of my own models.  Also wrapping up a project in the Godot game engine.
+Always tinkering with something.
 
 Active in the Free Software community and owner/maintainer of a medium-sized
 Mastodon instance.
