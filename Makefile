@@ -19,6 +19,8 @@ TARGET_DIR = ~/resume_public/
 	$(R) $(CSS_ARGS) $(PRIV_ARGS) $< > $@.tmp && mv $@.tmp $@
 	$(R) $(CSS_ARGS) $(PUB_ARGS) $< > $*-public.tmp && mv $*-public.tmp $*-public.html
 
+dev:
+	while true; do inotifywait -e modify resume.md resumedata* css/resume.css bin/mkresume ; make; done
 
 
 %.pdf: html

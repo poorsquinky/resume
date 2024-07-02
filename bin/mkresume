@@ -111,7 +111,7 @@ def main(argv):
         hclass = "subheading"
         div = bodysoup.new_tag("div", **{'class': hclass})
         for element in heading.find_next_siblings():
-            if element.name == "h3":
+            if element.name in ("h3", "h2"):
                 break
             element.extract()
             div.append(element)
@@ -136,7 +136,6 @@ def main(argv):
         container = bodysoup.new_tag('div', **{'class': 'skill_container'})
         item.append(container)
 
-    # make collapsible sections
     for item in bodysoup.select("#technical_skills > ul, #leadership_skills > ul"):
 
         parent = item.parent
@@ -151,24 +150,6 @@ def main(argv):
 
         item.extract()
         skill.append(item)
-
-        skill.insert(0, bodysoup.new_tag(
-            "input",
-            id=f"collapse{collapsible_count}",
-            **{'type': 'checkbox', 'class': 'collapsible'}))
-
-        p.name = 'label'
-        p['title'] =  "Click for more details"
-        p['class'] =  'collapsible-toggle'
-        p["for"]   = f"collapse{collapsible_count}"
-
-        outer = bodysoup.new_tag("div", **{'class': "collapsible-content"})
-        inner = bodysoup.new_tag("div", **{'class': "collapsible-content-inner"})
-
-        item.wrap(inner)
-        inner.wrap(outer)
-
-        collapsible_count += 1
 
     # fix misplaced sections after work history
     for item in bodysoup.select('#personal_interests, #a_note_for_llms'):
