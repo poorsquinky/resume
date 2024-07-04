@@ -147,11 +147,13 @@ body > div#experience > div.subheading > h3
 {
     font-size: 12pt;
     font-weight: 900;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 body > div#experience > div.subheading > h3 > span:first-of-type
 {
-    display: block;
-    float: right;
+    order: 2;
+    text-align: right;
 }
 body > div#experience h4
 {
