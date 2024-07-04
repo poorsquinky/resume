@@ -22,18 +22,10 @@ PDF         [Link to a PDF version](https://erikstambaugh.com/resume/ErikStambau
 Summary
 -------
 
-Experienced technical leader who values quality, collaboration, and clear
-communication.  Skilled in all levels of application delivery from software
-development and architecture, infrastructure and DevOps, and information
-security.
-
-Focused on rapid development and delivery of reliable,
-fault-tolerant systems at low cost in both cloud and traditional data
-environments.
-
-Known for building high-performing teams and creating inclusive environments
-where everyone's input is valued.  Passionate about technology and the people
-who craft it.
+Experienced technical leader with a proven transformative ability on
+information systems and architecture.  Focused on thoughtful planning and
+building a culture of open collaboration.  Known for building high-performing
+teams and creating inclusive environments where everyone's input is valued.
 
 
 Experience
@@ -44,12 +36,12 @@ Experience
 Recruited into a leadership role for the expanding DevOps team, with a broader
 impact across multiple development teams
 
-* Portfolio-wide technical leader on cloud-first infrastructure modernization
-  initiatives
-* Managed cloud cost saving efforts recovering millions of dollars in
-  recurring expenses and closing multiple data centers
-* Recruited and led a diverse and multiregional team of 15 first-class DevOps
-  engineers, DBA and network engineers
+* Enabled dozens of development teams to self-manage AWS infrastructure by
+  leading platform migration and architecture modernization initiatives
+* Saved over a million dollars in annual expenses by managing cloud cost
+  reduction efforts and closing multiple data centers
+* Expanded Application Delivery operations and scope by recruiting and leading
+  a diverse and multiregional team of 15 first-class engineers
 * Mentored team to develop skill and confidence by carefully guiding staff
   outside their technical comfort zone.  Performed training in group settings on
   emerging cloud and software technologies
@@ -60,31 +52,31 @@ impact across multiple development teams
 NextGen's first "DevOps" hire, brought in to help steer companywide cloud
 and application delivery models for a broad product portfolio
 
-* Lead engineer on a versatile team that provides targeted assistance to many
-  internal product teams on cloud best practices, infrastructure-as-code
-  (IaC), application architecture and modernization, and DevOps best practices
-* Developed modular infrastructure systems that were re-used companywide for
-  HIPAA and security compliance
-* Re-engineered product deployment code for speed and modularity, dropping
-  delivery times by multiple orders of magnitude and kicking off the
-  company's first true production CI/CD cycles
-* Consulted with product groups as subject matter expert on cloud best practices,
-  security and data safety
+* Provided guidance to application development teams on cloud and DevOps best
+  practices.
+* Improved infrastructure development speed and quality by developing modular
+  IaC systems with compliance built in
+* Empowered application development teams by providing reference architectures
+  and account guardrails
+* Multiplied feature team code delivery speeds by re-engineering product
+  deployment code from the ground up, bringing CI/CD cycle times from three
+  days to three minutes
 
 ### 2012-2015: Red 5 Studios Inc., Irvine, CA
-#### Senior Systems Engineer / SRE
-Originally brought on to build and lead the NOC, but brought site reliability
-to a high enough level to make a NOC unnecessary.  Acted instead as a
-lead/staff engineer on the cloud ops team.
+#### Senior Systems Engineer
+Originally hired to build and lead the Network Operations Center for a
+MMORPG, but brought site reliability to a high enough level to make a NOC
+unnecessary.  Acted instead as lead/staff engineer on the cloud ops team.
 
-* Led on-call engineering staff for a 24x7 cloud-based MMORPG from public
-  alpha and beta through fully-shipped release
-* Developed custom instrumentation aggregation software to provide simple
-  combined views into several data centers
-* Created live gameplay statistics and business intelligence dashboards for
-  use throughout the company
-* Designed the company's data lake and introduced cost-saving measures with
-  faster and more efficient data storage
+* Guaranteed 24x7 service reliability by leading on-call engineering staff
+  and creating incident policies and procedures
+* Enabled staff to monitor 9 regions simultaneously by developing custom
+  instrumentation aggregation software
+* Provided live KPIs to executive team via gameplay statistics and business
+  intelligence dashboards
+* Empowered design and incident response teams to use the the game's massive
+  audit data by creating complex transformations as needed, and designed the
+  company's data lake
 * Performed screening and hiring decisions, plus mentoring, coaching
   and training for new network operations staff
 * Systems architecture and deployment automation.  AWS and OpenStack cloud
@@ -92,27 +84,33 @@ lead/staff engineer on the cloud ops team.
 
 ### 2011-2012: Self-employed, Irvine, CA
 #### Freelance Software Development
-Contacted by a former employer with a specific and detailed development project
+Approached by a former employer with a specific and detailed development project
 
 * Independent development of a bespoke hybrid document management and CRM
-  application for a corporate client
+  application using Python / Django, PostgreSQL and jQuery
 * Carried the project from RFQ through design review to a fully packaged
   finished application stack
-* Application development using Python / django, PostgreSQL and jQuery
+* Fully documented and trained staff on the new system, and helped with
+  deployment
 
-### 2009-2011: Canonical Ltd., London UK
+### 2009-2011: Canonical Ltd., London, UK
 #### Systems Administrator
 Part of the "follow the sun" SysAdmin team for Ubuntu, a major Linux distribution
 
-* Network security and incident management
-* Systems maintenance and deployment
-* Development of internal systems and integration of new technologies
+* Provided network and security incident management in an international
+  "follow-the-sun" configuration
+* Developed and integrated the company's first multiregional teleconferencing
+  system, providing ongoing support and maintenance
+* Deployment and maintenance of Ubuntu packages, backports, and package
+  distribution systems
 
 ### 2006-2009: TrustCommerce, Irvine, CA
 #### Senior Systems Administrator
+24x7x365 on-call for an electronic credit/debit payment processing provider
 
 * Designed and maintained data centers and incident response policies.
   Developed infrastructure automation and software testing systems
+* Led PCI-DSS audits, remediation, and compensating controls
 * Generated internal training materials, and served as primary mentor for new
   systems administration staff
 * Heavy data analytics work requiring on-the-fly queries and cross references
@@ -120,25 +118,28 @@ Part of the "follow the sun" SysAdmin team for Ubuntu, a major Linux distributio
 
 ### 2001-2006: Conexant Systems, Inc. / Mindspeed Technologies, Newport Beach, CA
 #### Systems Engineer
+Diverse software and systems engineering role supporting microchip and
+firmware development teams
 
 * Deployed, integrated, and managed engineering support systems.  Performed
   a massive data migration from legacy source code management services
-* Mentored and formally trained new hires on software engineering best practices
 * Made hardware compatibility improvements to the Linux kernel ATM driver
 * Major contributor of enterprise features to the Bugzilla project
-* Created a circuit-switched network processor test system.  Devised new product testing and automation processes
-* Acted in an advisory role to the IT department for network security and
-  server architecture issues
+* Created a circuit-switched network processor test system.  Devised new product
+  testing and automation processes
 
 ### 2001: Ten Square, San Jose, CA
 #### Systems Administrator
+Tooling specialist on a systems administration team for a product startup
 
-* "Tool software guy" on the systems administration team.  Developed a reverse
-  proxy application, encrypted file transfer GUI, and VPN monitoring and
-  administration tool
+* Provided secure customer data transfer by developing a specialized
+  user-friendly encrypted file transfer system
+* Created a reverse proxy application -- it was a new concept at the time
+* Built VPN monitoring systems and performed Solaris administration tasks
 
 ### 2000-2001: Coreon, Inc., Fremont, CA
 #### Network Operations Engineer
+NOC lead at a network management consulting company
 
 * Provided network and services support for users within the company
 * Managed Solaris and Linux systems for the company's West coast NOC
@@ -146,7 +147,6 @@ Part of the "follow the sun" SysAdmin team for Ubuntu, a major Linux distributio
   networks
 
 ---
-
   
 
 *Employment history prior to 2000 available upon request*
@@ -157,8 +157,8 @@ Technical Skills
 ----------------
 
 Application Development
-- Python, JavaScript, C, C#, Bash, Ruby, Perl, countless others
-- Creation of robust, scalable, and maintainable application architecture
+- Python, JavaScript, C, C#, Bash, Ruby, Perl, many others
+- Robust, scalable, and maintainable application architecture
 - Knowledgeable with legacy architectures and how to bring them up to standard
 
 Cloud Computing
@@ -168,8 +168,8 @@ Cloud Computing
 - Hands-on with development of cloud-first architectures
 
 Continuous Integration / Delivery (CI/CD)
-- Obsessively focused on creating fast and safe development/testing/deployment cycles as
-  a force multiplier on development
+- Jenkins and CodePipeline / CodeDeploy, as well as bespoke delivery systems
+- Skilled at creating fast and safe development/testing/deployment pipelines
 
 GNU / Linux
 - Intricate knowledge of SysV Unix internals
@@ -199,7 +199,6 @@ Data Management
 - DBA-level experience with RDBMS like PostgreSQL and mySQL
 - "Big Data" tools like Spark and Athena
 - Data warehousing and data lake design
-- Rapid ad-hoc processing of large datasets
 
 Leadership Skills
 -----------------
@@ -215,12 +214,9 @@ Team Leadership
 Conflict Resolution
 - Skilled at resolving interpersonal and team conflicts
 
-Problem Solving
-- Innovative solutions to complex technical challenges
-
 Strategic Planning
 - Aligning technical goals with overall business objectives
-- Pre-planning to anticipate problems before they happen
+- Designing systems and processes to anticipate problems before they happen
 
 Team Development
 - Mentoring technical staff for personal and professional advancement
@@ -228,28 +224,23 @@ Team Development
 Vendor Management
 - Evaluating and managing third-party vendors, contracts and agreements
 
-Delegation
-- Having a vision is good, but having a visionary team is better
 
 
+Relevant Projects and Community Involvement
+-------------------------------------------
 
-Personal Interests
-------------------
+Created a Tensorflow machine learning model for realtime audio classification,
+with a full MLOps development and operationalization pipeline.
 
-Interested in a broad range of arts: musician, steel sculptor, DJ/producer, digital
-interactive installation artist.  Frequently found outdoors as well.
+Member of the Black Rock Rangers, a volunteer organization that provides trained
+crisis and conflict mediation at large scale events.
 
-Recent personal code projects include a Tensorflow / Jupyter / MLOps development and
-operationalization pipeline with a realtime audio classification model, a Python /
-NATS / HTMX fullstack ActivityPub prototype application with complete CI/CD and
-integration testing, and some experimental pop-art GLSL / Godot shaders.
-
-Member of the Black Rock Rangers, a trained volunteer organization that
-performs safety, crisis and conflict mediation at large-scale events.
-
-Does a pretty great Kermit the Frog impression.
+Active in the Free Software community.  Nearing completion on a
+yet-to-be-released frameworkless async Python / NATS / HTMX full-stack
+ActivityPub service with complete CI/CD pipeline, to be released under the GNU
+Affero General Public License.
 
 -----
 
-The latest annotated and interactive version of this document is always available at <https://erikstambaugh.com/resume/>.  
+The latest version of this document is always available at <https://erikstambaugh.com/resume/>.  
 Converted from [original Markdown source](https://erikstambaugh.com/resume/resume.md) using my tools, which are [available on github](https://github.com/poorsquinky/resume) and actually pretty interesting in their own right.

@@ -1,8 +1,10 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
 
 body {
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif !important;
+    font-family: 'Noto Sans', Helvetica, Arial, sans-serif !important;
     margin: 0 1rem 0 0;
     padding: 0;
 }
@@ -12,7 +14,7 @@ body > div#header > h1
     color: black;
     margin: 0;
     padding: 0;
-    font-size: 30pt;
+    font-size: 35pt;
     font-weight: 700;
 }
 
@@ -23,12 +25,21 @@ body > div {
 body > div#header > div#contact,
 body > div#summary,
 body > div#skills,
-body > div#technical_skills,
-body > div#leadership_skills,
 body > div#experience,
 body > div#certifications
 {
     margin-bottom: 0.25rem;
+    margin-top: 0.5rem;
+}
+body > div#technical_skills,
+body > div#leadership_skills
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+body > div#leadership_skills > h2
+{
+    margin-top: 0;
 }
 
 body > div#header
@@ -44,7 +55,6 @@ body > div > *
 
 body > div > p
 {
-    font-size: 9pt;
     margin-top: 0.25em;
     margin-bottom: 0.25rem;
 }
@@ -95,9 +105,9 @@ body > div#header > div#contact > p.element_pdf
 }
 h2
 {
-    font-size: 11pt;
+    font-size: 13pt;
     margin-top: 0.5rem;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
     padding-left: 0;
     border-bottom: solid #333 1px;
 }
@@ -127,7 +137,10 @@ body > div#experience
 div.subheading
 {
     page-break-inside: avoid;
-    padding-left: 1em;
+    padding-left: 1rem;
+}
+div.subheading > h3 {
+    margin-left: -1rem;
 }
 
 body > div#experience > div.subheading > h3
@@ -144,7 +157,7 @@ body > div#experience h4
 {
     font-size: 10pt;
     font-weight: 700;
-    margin-top: 0.25rem;
+    margin-top: 0.5rem;
 }
 body > div#experience h4:first-of-type
 {
@@ -252,7 +265,7 @@ div.skill p
 {
     margin: 0;
     padding: 0;
-    text-decoration: underline;
+    font-weight: bold;
 }
 div.skill ul
 {
@@ -269,7 +282,8 @@ hr
 {
     border-top: none;
     border-bottom: solid black 1px;
-    margin-top: 0.75rem !important;
+    margin-top: 0.25rem !important;
+    margin-bottom: 0.25rem !important;
 }
 
 #experience hr
@@ -280,12 +294,17 @@ hr
 
 body > div#footer > p
 {
-    font-size: 8pt;
+    font-size: 9pt;
     margin-top: 0.5rem;
 }
 
 p > em {
-    font-size: 8pt;
+    font-size: 9pt;
+}
+
+#experience p
+{
+    font-style: italic;
 }
 
 @media screen {
