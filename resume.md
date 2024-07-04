@@ -8,13 +8,13 @@ Contact
 
 Email       <erik@erikstambaugh.com>
 
-Web         <https://erikstambaugh.com/>
-
 LinkedIn    [linkedin.com/in/erik-stambaugh](https://www.linkedin.com/in/erik-stambaugh/)
 
-Mastodon    <https://hachyderm.io/@poorsquinky>
+Web         <https://erikstambaugh.com/>
 
 Github      <https://github.com/poorsquinky>
+
+Mastodon    <https://hachyderm.io/@poorsquinky>
 
 PDF         [Link to a PDF version](https://erikstambaugh.com/resume/ErikStambaugh.pdf)
 
@@ -222,7 +222,7 @@ Team Development
 - Mentoring technical staff for personal and professional advancement
 
 Vendor Management
-- Evaluating and managing third-party vendors, contracts and agreements
+- Evaluating and managing vendors, contracts and agreements
 
 
 
