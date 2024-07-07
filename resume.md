@@ -22,10 +22,14 @@ PDF         [Link to a PDF version](https://erikstambaugh.com/resume/ErikStambau
 Summary
 -------
 
-Experienced technical leader with a proven transformative ability on
-information systems and architecture.  Focused on thoughtful planning and
-building a culture of open collaboration.  Known for building high-performing
-teams and creating inclusive environments where everyone's input is valued.
+Experienced technical leader specialized in transforming information systems
+and architecture.  Skilled in building strong, collaborative multi-regional
+teams, with a leadership style that promotes a culture of continuous learning
+and empowerment.  Strong, diverse and active expertise with advanced cloud
+technologies.  Passionate about detailed instrumentation and innovation to
+meet strategic goals.
+
+
 
 
 Experience
@@ -38,7 +42,7 @@ impact across multiple development teams
 
 * Enabled dozens of development teams to self-manage AWS infrastructure by
   leading platform migration and architecture modernization initiatives
-* Saved over a million dollars in annual expenses by managing cloud cost
+* Saved millions of dollars in annual expenses by managing cloud cost
   reduction efforts and closing multiple data centers
 * Expanded Application Delivery operations and scope by recruiting and leading
   a diverse and multiregional team of 15 first-class engineers
@@ -49,11 +53,12 @@ impact across multiple development teams
   safety analysis
 
 #### Senior DevOps Engineer (2015-2019)
-NextGen's first "DevOps" hire, brought in to help steer companywide cloud
-and application delivery models for a broad product portfolio
+NextGen's first hire for the DevOps Center of Excellence, brought in to help
+steer companywide cloud and application delivery models for a broad product
+portfolio
 
-* Provided guidance to application development teams on cloud and DevOps best
-  practices.
+* Provided guidance and training to outside application development teams
+  on cloud and DevOps best practices.
 * Improved infrastructure development speed and quality by developing modular
   IaC systems with compliance built in
 * Empowered application development teams by providing reference architectures
@@ -232,13 +237,13 @@ Relevant Projects and Community Involvement
 Created a Tensorflow machine learning model for realtime audio classification,
 with a full MLOps development and operationalization pipeline.
 
-Member of the Black Rock Rangers, a volunteer organization that provides trained
-crisis and conflict mediation at large scale events.
-
 Active in the Free Software community.  Nearing completion on a
 yet-to-be-released frameworkless async Python / NATS / HTMX full-stack
 ActivityPub service with complete CI/CD pipeline, to be released under the GNU
 Affero General Public License.
+
+Member of the Black Rock Rangers, a volunteer organization that provides trained
+crisis and conflict mediation at large scale events.
 
 -----
 

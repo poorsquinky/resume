@@ -38,6 +38,7 @@ body > div#leadership_skills
 {
     margin-top: 0;
     margin-bottom: 0;
+    page-break-inside: avoid;
 }
 body > div#leadership_skills > h2
 {
@@ -74,8 +75,7 @@ dd
 body > div#header > div#contact
 {
     margin-bottom: 0;
-    font-size: 90%;
-    padding-left: 48vw;
+    padding-left: 46vw;
     margin-top: -3rem;
     text-align: right;
 }
@@ -84,15 +84,11 @@ body > div#header > div#contact > p
 {
     word-break: keep-all;
     display: inline-block;
-    font-size: 8pt;
+    font-size: 7.5pt;
     margin: 0;
     padding: 0;
     break-inside: avoid;
     text-align: left;
-}
-body > div#header > div#contact > p:after {
-    content:"\a";
-    white-space: pre;
 }
 body > div#header > div#contact > p a
 {
@@ -158,7 +154,7 @@ body > div#experience > div.subheading > h3 > span:first-of-type
 }
 body > div#experience h4
 {
-    font-size: 10pt;
+    font-size: 11pt;
     font-weight: 700;
     margin-top: 0.5rem;
 }
@@ -322,14 +318,14 @@ p > em {
 
 @media print {
     @page {
-        margin: 1.5rem;
+        margin: 0.5in;
     }
     body
     {
         background-image: none !important;
         color: black !important;
         background-color: white !important;
-        font-size: 9pt;
+        font-size: 11pt;
         margin: 0;
         padding: 0;
     }
