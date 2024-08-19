@@ -45,6 +45,11 @@ def deindent(txt):
     indent = min([ len(x) - len(x.lstrip()) for x in txt.split("\n") if len(x) > 0])
     return("\n".join(map(lambda x: x[indent:], txt.split("\n"))))
 
+def get_stylesheet_file(m):
+    fn = str(m.group()).lstrip('{').rstrip('}')
+    with open(fn) as fh:
+        return fh.read()
+
 def main(argv):
 
     stylesheet    = ""
@@ -77,6 +82,9 @@ def main(argv):
             except ruamel.yaml.parser.ParserError as err:
                 print("YAML parse error.  %s" % err)
                 usage()
+
+    # do file content replace on the stylesheet
+    stylesheet = re.sub('{{[^}]*}}', get_stylesheet_file, stylesheet)
 
     # work through all the markdown files specified
     for a in args:

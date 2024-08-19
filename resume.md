@@ -26,7 +26,7 @@ Experienced technical leader specialized in transforming information systems
 and architecture.  Skilled in building strong, collaborative multi-regional
 teams, with a leadership style that promotes a culture of continuous learning
 and empowerment.  Strong, diverse and active expertise with advanced cloud
-technologies.  Passionate about detailed instrumentation and innovation to
+technologies.  Passionate about maximizing observability and innovation to
 meet strategic goals.
 
 
@@ -229,21 +229,13 @@ Team Development
 Vendor Management
 - Evaluating and managing vendors, contracts and agreements
 
+Certifications
+--------------
 
+AWS Solutions Architect - Associate, 2018
 
-Relevant Projects and Community Involvement
--------------------------------------------
+Mirantis OpenStack Professional (OCM100), 2015
 
-Created a Tensorflow machine learning model for realtime audio classification,
-with a full MLOps development and operationalization pipeline.
-
-Active in the Free Software community.  Nearing completion on a
-yet-to-be-released frameworkless async Python / NATS / HTMX full-stack
-ActivityPub service with complete CI/CD pipeline, to be released under the GNU
-Affero General Public License.
-
-Member of the Black Rock Rangers, a volunteer organization that provides trained
-crisis and conflict mediation at large scale events.
 
 -----
 
