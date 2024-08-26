@@ -41,7 +41,9 @@ Recruited into a leadership role for the expanding DevOps team, with a broader
 impact across multiple development teams
 
 * Enabled dozens of development teams to self-manage AWS infrastructure by
-  leading platform migration and architecture modernization initiatives
+  leading platform migration and architecture modernization efforts
+* Kickstarted new DevSecOps initiatives by creating and leading a long-term
+  synchronization project between IS, R&D, Security and Cloud Architecture teams
 * Saved millions of dollars in annual expenses by managing cloud cost
   reduction efforts and closing multiple data centers
 * Expanded Application Delivery operations and scope by recruiting and leading
