@@ -38,7 +38,7 @@ Experience
 ### 2015-2024 (present): NextGen Healthcare, Irvine, CA
 #### Manager, Application Delivery (2019-present)
 Recruited into a leadership role for the expanding DevOps team, with a broader
-impact across multiple development teams
+impact across multiple development teams.
 
 * Enabled dozens of development teams to self-manage AWS infrastructure by
   leading platform migration and architecture modernization efforts
@@ -59,8 +59,8 @@ NextGen's first hire for the DevOps Center of Excellence, brought in to help
 steer companywide cloud and application delivery models for a broad product
 portfolio
 
-* Provided guidance and training to outside application development teams
-  on cloud and DevOps best practices.
+* Provided guidance and training to application development teams on cloud and
+  DevOps best practices.
 * Improved infrastructure development speed and quality by developing modular
   IaC systems with compliance built in
 * Empowered application development teams by providing reference architectures
@@ -169,8 +169,7 @@ Application Development
 - Knowledgeable with legacy architectures and how to bring them up to standard
 
 Cloud Computing
-- Heavy experience with public clouds (AWS) and private clouds (OpenStack).  Certified
-  with both.
+- Heavy experience with public clouds (AWS) and private clouds (OpenStack).
 - Leader in cost savings and cloud architecture best practices
 - Hands-on with development of cloud-first architectures
 
@@ -194,7 +193,8 @@ Compliance
   processes
 
 Infrastructure as Code (IaC)
-- Infrastructure management tools including Terraform / OpenTofu and CloudFormation
+- Infrastructure management tools including Terraform / OpenTofu and
+  CloudFormation
 - Server / instance management tools including Ansible and Chef
 - Docker Compose and ECS for container orchestration
 
@@ -207,29 +207,34 @@ Data Management
 - "Big Data" tools like Spark and Athena
 - Data warehousing and data lake design
 
+
 Leadership Skills
 -----------------
 
-Communication
-- Clear and effective at illustrating complex technical concepts to both technical and
-  nontechnical staff
+Strategic
+- Data-driven analysis for ROI measurement and forecasting to anticipate
+  problems before they happen
+- Evaluating and managing vendors, contracts and agreements
+- Aligning team goals with overall business objectives
 
-Team Leadership
-- "People first" leader, fostering trust and collaboration both within and outside our
-  team
+Collaborative
+- "People first" leader, fostering trust and collaboration both within and
+  outside our team
+- Adept at resolving personal and team conflicts
 
-Conflict Resolution
-- Skilled at resolving interpersonal and team conflicts
-
-Strategic Planning
-- Aligning technical goals with overall business objectives
-- Designing systems and processes to anticipate problems before they happen
-
-Team Development
+Supportive
+- Fostering environments where high-performing technical staff feel valued
+  and effective
 - Mentoring technical staff for personal and professional advancement
 
-Vendor Management
-- Evaluating and managing vendors, contracts and agreements
+Articulate
+- Clear and effective at illustrating complex technical concepts to both
+  technical and nontechnical staff
+
+Transformational
+- Holistic design and reimagining of systems and processes to maximize
+  quality, efficiency, and security
+
 
 Certifications
 --------------
