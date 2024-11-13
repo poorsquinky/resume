@@ -37,13 +37,15 @@ Experience
 
 ### 2015-2024 (present): NextGen Healthcare, Irvine, CA
 #### Manager, Application Delivery (2019-present)
-Recruited into a leadership role for the expanding DevOps team, with a broader
-impact across multiple development teams.
+Head of a diverse Cloud / DevOps special projects team, driving modernization
+and migration work across the company portfolio
 
 * Enabled dozens of development teams to self-manage AWS infrastructure by
-  leading platform migration and architecture modernization efforts
-* Kickstarted new DevSecOps initiatives by creating and leading a long-term
-  synchronization project between IS, R&D, Security and Cloud Architecture teams
+  coordinating complex platform migration and architecture modernization efforts
+* Acted as subject matter expert for development teams on Cloud Architecture,
+  CI/CD, and network security
+* Kickstarted new DevSecOps initiatives by creating and leading long-term
+  synchronization between IS, R&D, Security and Cloud Architecture teams
 * Saved millions of dollars in annual expenses by managing cloud cost
   reduction efforts and closing multiple data centers
 * Expanded Application Delivery operations and scope by recruiting and leading
@@ -66,8 +68,8 @@ portfolio
 * Empowered application development teams by providing reference architectures
   and account guardrails
 * Multiplied feature team code delivery speeds by re-engineering product
-  deployment code from the ground up, bringing CI/CD cycle times from three
-  days to three minutes
+  deployment code from the ground up, lowering CI/CD cycle times from days to
+  minutes
 
 ### 2012-2015: Red 5 Studios Inc., Irvine, CA
 #### Senior Systems Engineer
@@ -75,17 +77,18 @@ Originally hired to build and lead the Network Operations Center for a
 MMORPG, but brought site reliability to a high enough level to make a NOC
 unnecessary.  Acted instead as lead/staff engineer on the cloud ops team.
 
+* Designed and implemented global multi-region active-active service topologies
 * Guaranteed 24x7 service reliability by leading on-call engineering staff
   and creating incident policies and procedures
-* Enabled staff to monitor 9 regions simultaneously by developing custom
-  instrumentation aggregation software
+* Developed in-house custom monitoring software to manage 9 international
+  regions
 * Provided live KPIs to executive team via gameplay statistics and business
   intelligence dashboards
 * Empowered design and incident response teams to use the the game's massive
   audit data by creating complex transformations as needed, and designed the
   company's data lake
 * Performed screening and hiring decisions, plus mentoring, coaching
-  and training for new network operations staff
+  and training for network operations staff
 * Systems architecture and deployment automation.  AWS and OpenStack cloud
   infrastructure management
 
@@ -93,8 +96,8 @@ unnecessary.  Acted instead as lead/staff engineer on the cloud ops team.
 #### Freelance Software Development
 Approached by a former employer with a specific and detailed development project
 
-* Independent development of a bespoke hybrid document management and CRM
-  application using Python / Django, PostgreSQL and jQuery
+* Independent fullstack development of a bespoke hybrid document management and
+  CRM application using Python / Django, PostgreSQL and jQuery
 * Carried the project from RFQ through design review to a fully packaged
   finished application stack
 * Fully documented and trained staff on the new system, and helped with
@@ -102,7 +105,7 @@ Approached by a former employer with a specific and detailed development project
 
 ### 2009-2011: Canonical Ltd., London, UK
 #### Systems Administrator
-Part of the "follow the sun" SysAdmin team for Ubuntu, a major Linux distribution
+Part of the SysAdmin team for Ubuntu, a major Linux distribution
 
 * Provided network and security incident management in an international
   "follow-the-sun" configuration
@@ -110,6 +113,7 @@ Part of the "follow the sun" SysAdmin team for Ubuntu, a major Linux distributio
   system, providing ongoing support and maintenance
 * Deployment and maintenance of Ubuntu packages, backports, and package
   distribution systems
+* Day-to-day upkeep of a massive and complex live services operation
 
 ### 2006-2009: TrustCommerce, Irvine, CA
 #### Senior Systems Administrator
@@ -164,9 +168,12 @@ Technical Skills
 ----------------
 
 Application Development
-- Python, JavaScript, C, C#, Bash, Ruby, Perl, many others
+- Full stack application development in Python
+- Many programming languages including JavaScript, C, C#, Bash, Ruby, Perl
 - Robust, scalable, and maintainable application architecture
 - Knowledgeable with legacy architectures and how to bring them up to standard
+- Familiar with ML (model generation and training) and MLOps (operationalization)
+  practices
 
 Cloud Computing
 - Heavy experience with public clouds (AWS) and private clouds (OpenStack).
@@ -177,7 +184,7 @@ Continuous Integration / Delivery (CI/CD)
 - Jenkins and CodePipeline / CodeDeploy, as well as bespoke delivery systems
 - Skilled at creating fast and safe development/testing/deployment pipelines
 
-GNU / Linux
+Unix / Linux
 - Intricate knowledge of SysV Unix internals
 - Debian / Ubuntu package creation, maintenance, and backporting
 - Linux kernel device driver development
