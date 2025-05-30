@@ -35,7 +35,7 @@ meet strategic goals.
 Experience
 ----------
 
-### 2015-2024 (present): NextGen Healthcare, Irvine, CA
+### 2015-2025 (present): NextGen Healthcare, Irvine, CA
 #### Manager, Application Delivery (2019-present)
 Head of a diverse Cloud / DevOps special projects team, driving modernization
 and migration work across the company portfolio
