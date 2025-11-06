@@ -194,11 +194,6 @@ body > div#experience > div.subheading > h3
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-body > div#experience > div.subheading > h3 > span:first-of-type
-{
-    order: 2;
-    text-align: right;
-}
 body > div#experience h4
 {
     font-size: 11pt;
@@ -377,7 +372,7 @@ p > em {
         background-image: none !important;
         color: black !important;
         background-color: white !important;
-        font-size: 11pt;
+        font-size: 10pt;
         margin: 0;
         padding: 0;
     }

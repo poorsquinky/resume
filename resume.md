@@ -23,26 +23,23 @@ Summary
 -------
 
 Experienced technical leader specialized in transforming information systems
-and architecture.  Skilled in building strong, collaborative multi-regional
-teams, with a leadership style that promotes a culture of continuous learning
-and empowerment.  Strong, diverse and active expertise with advanced cloud
-technologies.  Passionate about maximizing observability and innovation to
-meet strategic goals.
-
-
+and architecture.  I am a strong believer in open collaboration and
+self-empowered teams.  I stay hands-on and active with advanced cloud and AI
+technologies, and care deeply about making systems observable, reliable, and
+cost-effective.
 
 
 Experience
 ----------
 
-### 2015-2025 (present): NextGen Healthcare, Irvine, CA
-#### Manager, Application Delivery (2019-present)
+### Manager, Application Delivery
+#### NextGen Healthcare, Irvine, CA - 2019-present
 Head of a diverse Cloud / DevOps special projects team, driving modernization
 and migration work across the company portfolio
 
 * Enabled dozens of development teams to self-manage AWS infrastructure by
   coordinating complex platform migration and architecture modernization efforts
-* Acted as subject matter expert for development teams on Cloud Architecture,
+* Acted as subject-matter expert for development teams on Cloud Architecture,
   CI/CD, and network security
 * Kickstarted new DevSecOps initiatives by creating and leading long-term
   synchronization between IS, R&D, Security and Cloud Architecture teams
@@ -56,7 +53,8 @@ and migration work across the company portfolio
 * Performed security incident response, forensics, and deep legacy product
   safety analysis
 
-#### Senior DevOps Engineer (2015-2019)
+### Senior DevOps Engineer
+#### NextGen Healthcare, Irvine, CA - 2015-2019
 NextGen's first hire for the DevOps Center of Excellence, brought in to help
 steer companywide cloud and application delivery models for a broad product
 portfolio
@@ -71,8 +69,8 @@ portfolio
   deployment code from the ground up, lowering CI/CD cycle times from days to
   minutes
 
-### 2012-2015: Red 5 Studios Inc., Irvine, CA
-#### Senior Systems Engineer
+### Senior Systems Engineer
+#### Red 5 Studios Inc., Irvine, CA - 2012-2015
 Originally hired to build and lead the Network Operations Center for a
 MMORPG, but brought site reliability to a high enough level to make a NOC
 unnecessary.  Acted instead as lead/staff engineer on the cloud ops team.
@@ -92,8 +90,8 @@ unnecessary.  Acted instead as lead/staff engineer on the cloud ops team.
 * Systems architecture and deployment automation.  AWS and OpenStack cloud
   infrastructure management
 
-### 2011-2012: Self-employed, Irvine, CA
-#### Freelance Software Development
+### Freelance Software Development
+#### Self-employed, Irvine, CA - 2011-2012
 Approached by a former employer with a specific and detailed development project
 
 * Independent fullstack development of a bespoke hybrid document management and
@@ -103,8 +101,8 @@ Approached by a former employer with a specific and detailed development project
 * Fully documented and trained staff on the new system, and helped with
   deployment
 
-### 2009-2011: Canonical Ltd., London, UK
-#### Systems Administrator
+### Systems Administrator
+#### Canonical Ltd., London, UK - 2009-2011
 Part of the SysAdmin team for Ubuntu, a major Linux distribution
 
 * Provided network and security incident management in an international
@@ -115,8 +113,8 @@ Part of the SysAdmin team for Ubuntu, a major Linux distribution
   distribution systems
 * Day-to-day upkeep of a massive and complex live services operation
 
-### 2006-2009: TrustCommerce, Irvine, CA
-#### Senior Systems Administrator
+### Senior Systems Administrator
+#### TrustCommerce, Irvine, CA - 2006-2009
 24x7x365 on-call for an electronic credit/debit payment processing provider
 
 * Designed and maintained data centers and incident response policies.
@@ -124,11 +122,11 @@ Part of the SysAdmin team for Ubuntu, a major Linux distribution
 * Led PCI-DSS audits, remediation, and compensating controls
 * Generated internal training materials, and served as primary mentor for new
   systems administration staff
-* Heavy data analytics work requiring on-the-fly queries and cross references
+* Heavy data analytics work requiring on-the-fly queries and cross-references
   to data stores in multiple formats
 
-### 2001-2006: Conexant Systems, Inc. / Mindspeed Technologies, Newport Beach, CA
-#### Systems Engineer
+### Systems Engineer
+#### Conexant Systems, Inc. / Mindspeed Technologies, Newport Beach, CA - 2001-2006
 Diverse software and systems engineering role supporting microchip and
 firmware development teams
 
@@ -139,8 +137,8 @@ firmware development teams
 * Created a circuit-switched network processor test system.  Devised new product
   testing and automation processes
 
-### 2001: Ten Square, San Jose, CA
-#### Systems Administrator
+### Systems Administrator
+#### Ten Square, San Jose, CA - 2001
 Tooling specialist on a systems administration team for a product startup
 
 * Provided secure customer data transfer by developing a specialized
@@ -148,8 +146,8 @@ Tooling specialist on a systems administration team for a product startup
 * Created a reverse proxy application -- it was a new concept at the time
 * Built VPN monitoring systems and performed Solaris administration tasks
 
-### 2000-2001: Coreon, Inc., Fremont, CA
-#### Network Operations Engineer
+### Network Operations Engineer
+#### Coreon, Inc., Fremont, CA - 2000-2001
 NOC lead at a network management consulting company
 
 * Provided network and services support for users within the company
@@ -175,6 +173,12 @@ Application Development
 - Familiar with ML (model generation and training) and MLOps (operationalization)
   practices
 
+Artificial Intelligence & Machine Learning
+- Designing, training, and deploying models using frameworks such as Keras and TensorFlow
+- Building AI-enhanced systems, including semantic search, LLM integration, and NLP pipelines
+- Audio signal processing, feature engineering, and pipeline automation for ML workloads
+- Integrating AI solutions into software architectures with deployment orchestration and experiment tracking
+
 Cloud Computing
 - Heavy experience with public clouds (AWS) and private clouds (OpenStack).
 - Leader in cost savings and cloud architecture best practices
@@ -185,7 +189,7 @@ Continuous Integration / Delivery (CI/CD)
 - Skilled at creating fast and safe development/testing/deployment pipelines
 
 Unix / Linux
-- Intricate knowledge of SysV Unix internals
+- Intricate knowledge of SysV Unix internals and modern Linux systems
 - Debian / Ubuntu package creation, maintenance, and backporting
 - Linux kernel device driver development
 
@@ -210,7 +214,7 @@ Network Administration
 - Packet-level network analysis and troubleshooting
 
 Data Management
-- DBA-level experience with RDBMS like PostgreSQL and mySQL
+- DBA-level experience with RDBMS like PostgreSQL and MySQL
 - "Big Data" tools like Spark and Athena
 - Data warehousing and data lake design
 
